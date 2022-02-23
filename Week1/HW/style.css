@@ -1,0 +1,122 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+p.margin{
+    margin: 0px;
+}
+
+p{
+    font-family: 'Gowun Batang', serif;
+}
+
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Gowun Batang', serif;
+}
+
+#white{
+    color:rgb(241, 244, 247);
+}
+
+.disp-grid{
+    display: grid;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+    background-size: 100%;
+}
+
+.center{
+    align-content: center;
+}
+
+.row-one{
+    grid-row: 1/span 1;
+}
+
+.span-screen{
+    grid-column: 1/span 6;
+}
+.half-screen-1{
+    grid-column: 1/span 3;
+}
+.half-screen-2{
+    grid-column: 3/span 2;
+    justify-content: start;
+}
+.large-font{
+    font-size: 18vw;
+}
+.third-screen-l{
+    grid-column: 1/span 2;
+}
+.third-screen-m{
+    grid-column: 3/span 2;
+}
+.third-screen-r{
+    grid-column: 5/span 2;
+}
+
+p.small {
+    line-height: 0.85;
+  }
+
+p.medium {
+    line-height: 1.2;
+  }
+
+.pad{
+    padding: 0px 10px 0px 10px;
+}
+.pad-l{
+    padding-left: 10px;
+}
+.pad-r-none{
+    padding-right: 0px;
+}
+.pad-r{
+    padding-right: 10px;
+}
+
+@media(min-width: 672px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        gap: 18px;
+        background-size: 100%;
+    }  
+}
+
+@media(min-width: 960px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 24px;
+        background-size: 100%;
+        max-width: 1024px;
+        margin: auto;
+    } 
+}
