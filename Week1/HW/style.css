@@ -44,6 +44,8 @@ h1 h2 h3 h4 h5 h6{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     gap: 12px;
+    margin-left: 10px;
+    margin-right: ;
     background-size: 100%;
 }
 
@@ -86,7 +88,7 @@ p.medium {
     line-height: 1.2;
   }
 
-.pad{
+/* .pad{
     padding: 0px 10px 0px 10px;
 }
 .pad-l{
@@ -97,7 +99,39 @@ p.medium {
 }
 .pad-r{
     padding-right: 10px;
+} */
+
+
+.h{
+    height: 200px;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: 'Gowun Batang', serif;
+    height: 20px;
+  }
+  
+  label {
+    display: inline-block;
+    font-family: 'Gowun Batang', serif;
+  }
+  
+  input[type=submit] {
+    background-color: #000f0a;
+    color: white;
+    width: 100px;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: auto;
+    font-family: 'Gowun Batang', serif;
+    font-size: 20px;
+  }
 
 @media(min-width: 672px){
     .grid{
@@ -107,6 +141,15 @@ p.medium {
         gap: 18px;
         background-size: 100%;
     }  
+
+    .half-screen-l-md{
+        grid-column: 1/span 3;
+    }
+    .half-screen-r-md{
+        grid-column: 4/span 3;
+        justify-content: start;
+    }
+
 }
 
 @media(min-width: 960px){
@@ -118,5 +161,24 @@ p.medium {
         background-size: 100%;
         max-width: 1024px;
         margin: auto;
-    } 
+    }
+    .pad-none{
+        padding: 0;
+    }
+    .span-screen-lg{
+        grid-column: 1/span 12;
+    }
+    .half-screen-l-lg{
+        grid-column: 1/span 6;
+    }
+
+    .third-screen-l-lg{
+        grid-column: 1/span 4;
+    }
+    .third-screen-m-lg{
+        grid-column: 5/span 4;
+    }
+    .third-screen-r-lg{
+        grid-column: 9/span 4;
+    }
 }

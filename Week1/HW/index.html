@@ -24,10 +24,10 @@
     <main>
         <div class="disp-grid">
             <div class="grid">
-                <picture class="span-screen row-one pad">
+                <picture class="span-screen span-screen-lg row-one pad">
                     <source media="(min-width: 960px)" srcset="imgs/porterheaderLarge.jpg">
                     <source media="(min-width: 672px)" srcset="imgs/porterheader.jpg">
-                    <img src="imgs/porterheader.jpg" alt="Porter Robinson by Ryan James Caruthers">
+                    <img src="imgs/porterheaderLarge.jpg" alt="Porter Robinson by Ryan James Caruthers">
                 </picture>
                 <p class="half-screen-2 row-one large-font small margin center pad-r-none" id="white">
                     porter
@@ -67,69 +67,88 @@
                         here'.”
                     </p>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen half-screen-l-md third-screen-l-lg pad pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/album1.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/album1.jpg">
                             <img src="imgs/album1.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen half-screen-r-md third-screen-m-lg pad pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/album2.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/album2.jpg">
                             <img src="imgs/album2.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen half-screen-l-md third-screen-r-lg pad pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/album3.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/album3.jpg">
                             <img src="imgs/album3.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen half-screen-r-md third-screen-l-lg pad pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/nurtureLive1.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/nurtureLive1.jpg">
                             <img src="imgs/nurtureLive1.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen pad half-screen-l-md third-screen-m-lg pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/nurtureLive2.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/nurtureLive2.jpg">
                             <img src="imgs/nurtureLive2.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="span-screen pad">
+                    <div class="span-screen half-screen-r-md third-screen-r-lg pad pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/nurtureLive3.jpg">
                             <source media="(min-width: 672px)" srcset="imgs/nurtureLive3.jpg">
                             <img src="imgs/nurtureLive3.jpg" alt="Nurture album">
                         </picture>
                     </div>
-                    <div class="third-screen-l pad-l">
+                    <div class="third-screen-l pad-l third-screen-l-lg pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/stage1L.png">
                             <source media="(min-width: 672px)" srcset="imgs/stage1L.png">
-                            <img src="imgs/stage1L.png" alt="Nurture album">
+                            <img src="imgs/stage1L.png" alt="Stage Left">
                         </picture>
                     </div>
-                    <div class="third-screen-m">
+                    <div class="third-screen-m third-screen-m-lg pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/stage1M.png">
                             <source media="(min-width: 672px)" srcset="imgs/stage1M.png">
-                            <img src="imgs/stage1M.png" alt="Nurture album">
+                            <img src="imgs/stage1M.png" alt="Stage Center">
                         </picture>
                     </div>
-                    <div class="third-screen-r pad-r">
+                    <div class="third-screen-r pad-r third-screen-r-lg pad-none">
                         <picture>
                             <source media="(min-width: 960px)" srcset="imgs/stage1R.png">
                             <source media="(min-width: 672px)" srcset="imgs/stage1R.png">
-                            <img src="imgs/stage1R.png" alt="Nurture album">
+                            <img src="imgs/stage1R.png" alt="Stage Right">
                         </picture>
                     </div>
+                    <h1 class="span-screen span-screen-lg">
+                        contact us
+                    </h1>
+                    <form action="" method="post" id="donateForm" class=" span-screen half-screen-l-lg pad">
+                        <label class="span-screen half-screen-l-lg pad" for="email"> </label>
+                        <input type="text" name="email" id="email" placeholder="email address">
+    
+                        <label class="span-screen half-screen-l-lg pad" for="firstName"> </label>
+                        <input type="text" name="first name" id="firstName" placeholder="first name">
+    
+                        <label class="span-screen half-screen-l-lg pad" for="lastName"> </label>
+                        <input type="text" name="last name" id="lastName" placeholder="last name">
+    
+                        <label class="h span-screen half-screen-l-lg pad" for="message"> </label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                        <br>
+    
+                        <input type="submit" value="send">
+                    </form>
             </div>
         </div>
     </main>
