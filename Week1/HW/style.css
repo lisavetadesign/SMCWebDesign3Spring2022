@@ -45,7 +45,7 @@ h1 h2 h3 h4 h5 h6{
     grid-template-rows: auto;
     gap: 12px;
     margin-left: 10px;
-    margin-right: ;
+    margin-right: 10px;
     background-size: 100%;
 }
 
