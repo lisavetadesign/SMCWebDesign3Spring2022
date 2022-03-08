@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Web 3</title>
+    <style>
+        #Section1{
+            height: 100px;
+        }
+        #Section2{
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,10 +20,26 @@
 
     </header>
     <main>
-        <p>HELLO Web 3!</p>
+        <div class="section" id="Section1">
+        </div>
+        
+        <div class="section" id="Section2">
+            <button id="mainButton">Click Me!</button>
+        </div>
+        
     </main>
     <footer>
 
     </footer>
+
+    <script>
+        var mainB = document.getElementById("mainButton");
+        mainB.addEventListener("click", function(){
+            document.getElementById("Section1").style.backgroundColor="red";
+        });
+        function doIT(){
+            document.getElementById("Section2").style.backgroundColor="green";
+        }
+    </script>
 </body>
 </html>
