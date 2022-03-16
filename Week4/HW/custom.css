@@ -1,0 +1,64 @@
+:root{
+    --phhtalogreen: rgb(0, 25, 2);
+    --darkskyblue: rgb(1, 55, 122);
+    --frenchskyblue: rgb(130, 192, 255);
+    --teagreen: rgb(200, 220, 179);
+    --honeydew: rgb(246, 255, 238);
+}
+
+.hero{
+    background-color: var(--frenchskyblue);
+    min-height: 600px;
+}
+
+.bg-pg{
+    background-color: var(--phhtalogreen);
+    min-height: 400px;
+}
+.bg-dsb{
+    background-color: var(--darkskyblue);
+    min-height: 400px;
+}
+.bg-fsb{
+    background-color: var(--frenchskyblue);
+    min-height: 400px;
+
+}
+.bg-tg{
+    background-color: var(--teagreen);
+    min-height: 400px;
+}
+.bg-hd{
+    background-color: var(--honeydew);
+    min-height: 400px;
+}
+
+.right-sticky{
+    position: sticky;
+    height: 30vh;
+    bottom: 0;
+    background-color: var(--phhtalogreen);
+}
+
+@media(min-width: 672px){
+    .right-sticky-md{
+        position: sticky;
+        height: 100vh;
+        bottom: 0;
+        background-color: var(--phhtalogreen);
+    }
+
+    .left-md{
+        float:left;
+    }
+
+@media(min-width: 960px){
+    .right-sticky-lg{
+        position: sticky;
+        height: 100vh;
+        bottom: 0;
+        background-color: var(--phhtalogreen);
+    } 
+}
+
+}
