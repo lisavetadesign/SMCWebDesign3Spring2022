@@ -8,18 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
     <title>Bootstrap UI Components Coffee Shop</title>
     <style>
         .logo {
-            height: 60px;
+            max-height: 80px;
         }
 
-        .logoOther {
-            height: 40px;
+        .iconsize{
+            font-size: 24px;
         }
 
         .hero-height {
-            height: 400px;
+            max-height: 400px;
         }
 
         .verticaltext {
@@ -29,18 +31,22 @@
             margin: auto;
         }
 
-        .test{
-            max-height:225px;
+        .test {
+            max-height: 230px;
         }
-        .h{
-            height:100px;
+
+        .h {
+            height: 100px;
+        }
+        .white{
+            color:white;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="logo"
                         src="https://images.squarespace-cdn.com/content/v1/55cc0e9ce4b09e646fec883d/4a972c52-8fa8-4a81-8d24-5bcc6fb25333/C%26W+Logo2.png?format=1500w"
@@ -55,20 +61,15 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="https://www.instagram.com/crumbs_whiskers/"><img class="logoOther"
-                                    src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instalogo"></a>
+                                href="https://www.instagram.com/crumbs_whiskers/"><i class="bi iconsize bi-instagram"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page"
-                                href="https://www.facebook.com/crumbsandwhiskers"><img class="logoOther"
-                                    src="https://whitelight.online/wp-content/uploads/2020/11/icon-fb.png.png"
-                                    alt="fblogo"></a>
+                                href="https://www.facebook.com/crumbsandwhiskers"><i class="bi iconsize bi-facebook"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="https://twitter.com/Crumbs_Whiskers"><img class="logoOther"
-                                    src="http://assets.stickpng.com/images/5a2fe479cc45e43754640849.png"
-                                    alt="twiterlogo"></a>
+                            <a class="nav-link active" aria-current="page" href="https://twitter.com/Crumbs_Whiskers"><i
+                                    class="bi iconsize bi-twitter"></i></a>
                         </li>
                 </div>
             </div>
@@ -109,8 +110,7 @@
                     <hr class="bg-danger">
                 </div>
                 <div class="col-12 col-md-6 col-xl-6 order-1 order-md-2 position-relative overflow-hidden text-center">
-                    <img src="catcoffee.jpg"
-                        class="img-fluid" alt="...">
+                    <img src="catcoffee.jpg" class="img-fluid" alt="...">
                 </div>
                 <div class="col-12 col-md-6 col-xl-6 order-2 order-md-1">
                     <h3>Our mission at Crumbs & Whiskers is</h3>
@@ -130,11 +130,11 @@
                 <div class="col-12 mt-2 mb-2">
                     <hr class="bg-danger">
                 </div>
-                <div class="col-2 col-md-2">
-                    <h1 class="verticaltext">OUR MENU</h1>
+                <div class="col-2 col-md-2 bg-dark white">
+                    <h1 class="verticaltext display-3 fw-bold"> MENU</h1>
                 </div>
-                <div class=" col-10 col-md-10 mx-auto">
-                    <table class="table">
+                <div class=" col-10 col-md-10 mx-auto bg-dark white">
+                    <table class="table white">
                         <thead>
                             <tr>
                                 <th scope="col">item</th>
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card position-relative overflow-hidden text-center test">
+                    <div class="card position-relative overflow-hidden text-center test w">
                         <img src="https://images.squarespace-cdn.com/content/v1/55cc0e9ce4b09e646fec883d/1561763749095-0A8VMKQLEVCIR0EF8HI2/Screen%252BShot%252B2019-05-03%252Bat%252B2.14.23%252BPM.jpg?format=1500w"
                             class="card-img-top" alt="plants">
                     </div>
@@ -219,16 +219,16 @@
                     <div class="card position-relative overflow-hidden text-center test">
                         <img src="https://images.squarespace-cdn.com/content/v1/59014ed8db29d637250fa476/1541354914763-X7CTXVV2CTB2O5GN8MHP/Crumbs+Whiskers-54.jpg"
                             class="card-img-top" alt="plants">
-                        </div>
                     </div>
-                
-                    <div class="col">
-                        <div class="card position-relative overflow-hidden text-center test">
-                            <img src="https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/Sprudge-CrumbsAndWhiskers-TatianaErnst-CrumbsAndWhiskers-BowtieCat-740x494.jpg"
-                                class="card-img-top" alt="plants">
-                            </div>
-                        </div>
                 </div>
+
+                <div class="col">
+                    <div class="card position-relative overflow-hidden text-center test">
+                        <img src="https://331mrnu3ylm2k3db3s1xd1hg-wpengine.netdna-ssl.com/wp-content/uploads/2016/12/Sprudge-CrumbsAndWhiskers-TatianaErnst-CrumbsAndWhiskers-BowtieCat-740x494.jpg"
+                            class="card-img-top" alt="plants">
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
