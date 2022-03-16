@@ -1,0 +1,26 @@
+/*why does the navbar-brand not work*/
+:root{
+   --oxfordblue: rgb(4, 5, 46);
+   --purple: rgb(65, 19, 150);
+   --periwinkle: rgb(134, 80, 233);
+   --midgrey: rgb(138, 129, 124);
+   --palegrey: rgb(188, 184, 177);
+   --lightgrey: rgb(244, 243, 238);
+}
+
+.navbar-brand:focus, .navbar-brand:hover, .navbar-brand {
+    color: var(--periwinkle) !important;
+  }
+.btn-outline-success{
+    color: var(--purple);
+    border-color: var(--purple);
+}
+
+.btn-outline-success:hover{
+    background-color: var(--purple);
+    color: white;
+}
+
+.bg-light{
+    background-color: var(--palegrey) !important;
+}
