@@ -11,25 +11,24 @@
     min-height: 600px;
 }
 
+.high{
+    height: 50vh;
+}
+
 .bg-pg{
     background-color: var(--phhtalogreen);
-    height: 500px;
 }
 .bg-dsb{
     background-color: var(--darkskyblue);
-    height: 500px;
 }
 .bg-fsb{
     background-color: var(--frenchskyblue);
-    height: 500px;
 }
 .bg-tg{
     background-color: var(--teagreen);
-    height: 500px;
 }
 .bg-hd{
     background-color: var(--honeydew);
-    height: 500px;
 }
 
 .right-sticky{
@@ -42,18 +41,23 @@
 @media(min-width: 672px){
     .right-sticky-md{
         position: sticky;
-        height: 100vh;
-        bottom: 0;
+        top: 0;
+        height:100vh;
         background-color: var(--phhtalogreen);
     }
 
 @media(min-width: 960px){
     .right-sticky-lg{
         position: sticky;
-        height: 95vh;
-        bottom: 0;
+        top: 0;
+        height:100vh;
         background-color: var(--phhtalogreen);
     } 
+
+    .nav-width-xl{
+        max-width: 1024px !important;
+        margin-left: 60px;
+    }
 }
 
 }
