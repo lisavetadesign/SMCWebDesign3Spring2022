@@ -15,6 +15,23 @@
     height: 50vh;
 }
 
+.high-2{
+    height: 15vh;
+}
+
+.high-b{
+    height: 60vh;
+}
+.high-b-2{
+    height: 30vh;
+}
+.high-b-3{
+    height: 20vh;
+}
+.high-b-4{
+    height: 15vh;
+}
+
 .bg-pg{
     background-color: var(--phhtalogreen);
 }
@@ -38,6 +55,10 @@
     background-color: var(--phhtalogreen);
 }
 
+
+/* THIS IS PART OF THE MULTI ITEM CAROUSEL*/
+
+
 @media(min-width: 672px){
     .right-sticky-md{
         position: sticky;
@@ -45,6 +66,25 @@
         height:100vh;
         background-color: var(--phhtalogreen);
     }
+    
+.high-md{
+    height: 50vh;
+}
+
+.high-md-b{
+    height: 60vh;
+}
+.high-md-b-2{
+    height: 30vh;
+}
+.high-md-b-3{
+    height: 20vh;
+}
+.high-md-b-4{
+    height: 15vh;
+}
+}
+
 
 @media(min-width: 960px){
     .right-sticky-lg{
@@ -58,6 +98,18 @@
         max-width: 1024px !important;
         margin-left: 60px;
     }
-}
+
+    .high-lg-b{
+        height: 60vh;
+    }
+    .high-lg-b-2{
+        height: 30vh;
+    }
+    .high-lg-b-3{
+        height: 20vh;
+    }
+    .high-lg-b-4{
+        height: 15vh;
+    }
 
 }
