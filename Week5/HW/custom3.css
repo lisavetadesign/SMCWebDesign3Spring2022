@@ -1,0 +1,157 @@
+:root{
+    --phhtalogreen: rgb(0, 25, 2);
+    --darkbluegreen: rgb(52, 102, 91);
+    --honeydew: rgb(246, 255, 238);
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: questa-grande, serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--honeydew) !important;
+}
+p{
+    font-family: quiche-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--honeydew) !important;
+}
+
+.hero{
+    background-image: url(imgs2/HeroPel2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.space{
+    height: 200px;
+}
+.high-m{
+    max-height: 100px;
+}
+.high-m-2{
+    max-height: 300px;
+}
+
+.btn-outline-dark{
+    color:var(--phhtalogreen) !important;
+}
+
+.high{
+    height: 50vh;
+}
+
+.high-2{
+    height: 15vh;
+}
+
+.high-b{
+    height: 60vh;
+}
+.high-b-2{
+    height: 30vh;
+}
+.high-b-3{
+    height: 20vh;
+}
+.high-b-4{
+    height: 15vh;
+}
+
+.card{
+    background-color: transparent !important;
+}
+.card-body{
+    background-color: var(--lighgtnude)!important;
+}
+
+.bg-nude{
+    background-color: var(--nude);
+}
+
+.bg-pg{
+    background-color: var(--phhtalogreen);
+}
+.bg-dpg{
+    background-color: var(--darkbluegreen);
+}
+.bg-fsb{
+    background-color: var(--frenchskyblue);
+}
+.bg-tg{
+    background-color: var(--teagreen);
+}
+.bg-hd{
+    background-color: var(--honeydew);
+}
+
+.right-sticky{
+    position: sticky;
+    height: 30vh;
+    bottom: 0;
+    background-color: var(--phhtalogreen);
+}
+
+
+/* THIS IS PART OF THE MULTI ITEM CAROUSEL*/
+
+
+@media(min-width: 672px){
+    .right-sticky-md{
+        position: sticky;
+        top: 0;
+        height:100vh;
+        background-color: var(--phhtalogreen);
+    }
+    
+.high-md{
+    height: 50vh;
+}
+.space-md{
+    height: 300px;
+}
+
+.high-md-b{
+    height: 60vh;
+}
+.high-md-b-2{
+    height: 30vh;
+}
+.high-md-b-3{
+    height: 20vh;
+}
+.high-md-b-4{
+    height: 15vh;
+}
+}
+
+
+@media(min-width: 960px){
+    .right-sticky-lg{
+        position: sticky;
+        top: 0;
+        height:100vh;
+        background-color: var(--phhtalogreen);
+    } 
+    .space-lg{
+        height: 400px;
+    }
+
+    .nav-width-xl{
+        max-width: 1024px !important;
+        margin-left: 60px;
+    }
+
+    .high-lg-b{
+        height: 60vh;
+    }
+    .high-lg-b-2{
+        height: 30vh;
+    }
+    .high-lg-b-3{
+        height: 20vh;
+    }
+    .high-lg-b-4{
+        height: 15vh;
+    }
+
+}
