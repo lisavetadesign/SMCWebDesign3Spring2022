@@ -1,0 +1,197 @@
+:root{
+    --phhtalogreen: rgb(0, 25, 2);
+    --honeydew: rgb(246, 255, 238);
+    --darknude: rgb(32, 14, 3);
+    --nude: rgba(240, 223, 181, 0.85);
+    --lighgtnude: rgb(255, 247, 241);
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--darknude) !important;
+}
+p{
+    font-family: gopher, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--darknude) !important;
+}
+
+.nav-bar{
+    background-color: rgb(240, 223, 181);
+    color: var(--darknude) !important;
+    font-family: roc-grotesk-wide, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-link{
+    color: var(--darknude) !important;  
+}
+
+.fs-6 {
+    font-size: .8rem !important;
+  }
+
+.hero{
+    background-image: url(imgs2/PelHero.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+}
+.space{
+    height: 200px;
+}
+
+
+
+.half-line{
+    line-height: .75 !important;
+}
+.high-m{
+    max-height: 100px;
+}
+.high-m-2{
+    max-height: 300px;
+}
+
+.opacity{
+    opacity: 0.65;
+}
+
+.pos{
+    position: absolute;
+}
+.hero-txt{
+    font-size: 160px;
+    position: relative;
+    top: -30px;
+    line-height: .7;
+    transform: translateX(-12%);
+    overflow: hidden;
+}
+
+.card{
+    background-color: transparent !important;
+}
+.card-body{
+    background-color: var(--lighgtnude)!important;
+}
+
+.bg-nude{
+    background-color: var(--nude);
+}
+.bg-ln{
+    background-color: var(--lighgtnude);
+}
+
+.bg-pg{
+    background-color: var(--phhtalogreen);
+}
+.bg-dsb{
+    background-color: var(--darkskyblue);
+}
+.bg-fsb{
+    background-color: var(--frenchskyblue);
+}
+.bg-tg{
+    background-color: var(--teagreen);
+}
+.bg-hd{
+    background-color: var(--honeydew);
+}
+
+.right-sticky{
+    position: sticky;
+    height: 30vh;
+    bottom: 0;
+    background-color: var(--phhtalogreen);
+}
+
+
+/* THIS IS PART OF THE MULTI ITEM CAROUSEL*/
+
+
+@media(min-width: 672px){
+    .right-sticky-md{
+        position: sticky;
+        top: 0;
+        height:100vh;
+        background-color: var(--phhtalogreen);
+    }
+    .hero-md{
+        background-image: url(imgs2/PelHero.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 500px;
+    }
+    
+.high-md{
+    height: 50vh;
+}
+.half-line-md{
+    line-height: .65 !important;
+}
+.space-md{
+    height: 300px;
+}
+
+.high-md-b{
+    height: 60vh;
+}
+.high-md-b-2{
+    height: 30vh;
+}
+.high-md-b-3{
+    height: 20vh;
+}
+.high-md-b-4{
+    height: 15vh;
+}
+}
+
+
+@media(min-width: 960px){
+    .right-sticky-lg{
+        position: sticky;
+        top: 0;
+        height:100vh;
+        background-color: var(--phhtalogreen);
+    } 
+
+    .hero-xl{
+        background-image: url(imgs2/PelHero.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 600px;
+    }
+
+    .space-lg{
+        height: 400px;
+    }
+
+    .half-line-xl{
+        line-height: .5 !important;
+    }
+
+    .nav-width-xl{
+        max-width: 1024px !important;
+        margin-left: 60px;
+    }
+
+    .high-lg-b{
+        height: 60vh;
+    }
+    .high-lg-b-2{
+        height: 30vh;
+    }
+    .high-lg-b-3{
+        height: 20vh;
+    }
+    .high-lg-b-4{
+        height: 15vh;
+    }
+
+}
