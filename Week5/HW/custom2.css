@@ -2,7 +2,7 @@
     --phhtalogreen: rgb(0, 25, 2);
     --honeydew: rgb(246, 255, 238);
     --darknude: rgb(32, 14, 3);
-    --nude: rgb(167, 129, 107);
+    --nude: rgba(240, 223, 181, 0.85);
     --lighgtnude: rgb(231, 213, 202);
 
 }
@@ -20,9 +20,10 @@ p{
 }
 
 .hero{
-    background-image: url(imgs2/HeroPel2.jpg);
+    background-image: url(imgs2/PelHero.jpg);
     background-position: center;
     background-size: cover;
+    min-height: 400px;
 }
 .space{
     height: 200px;
@@ -34,25 +35,15 @@ p{
     max-height: 300px;
 }
 
-.high{
-    height: 50vh;
+.pos{
+    position: absolute;
 }
-
-.high-2{
-    height: 15vh;
-}
-
-.high-b{
-    height: 60vh;
-}
-.high-b-2{
-    height: 30vh;
-}
-.high-b-3{
-    height: 20vh;
-}
-.high-b-4{
-    height: 15vh;
+.hero-txt{
+    font-size: 160px;
+    position: relative;
+    top: -30px;
+    line-height: .7;
+    transform: translateX(10%);
 }
 
 .card{
