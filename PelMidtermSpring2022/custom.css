@@ -3,10 +3,10 @@
     --honeydew: rgb(246, 255, 238);
     --darknude: rgb(32, 14, 3);
     --nude: rgba(240, 223, 181, 0.85);
-    --lighgtnude: rgb(255, 247, 241);
+    --lightnude: rgb(255, 247, 241);
 
 }
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6{
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -18,6 +18,32 @@ p{
     font-style: normal;
     color: var(--darknude) !important;
 }
+.pad-n{
+    padding: 0;
+}
+.space-prod{
+    height: 100px;
+}
+.f-w{
+    font-weight: 700 !important;
+}
+.f-h{
+    font-size: 3.5rem !important;
+    line-height: .8;
+}
+
+.roc-g-w{
+    font-family: roc-grotesk-wide, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--darknude) !important;
+}
+.gopher{
+    font-family: gopher, sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--darknude) !important;
+}
 
 .nav-bar{
     background-color: rgb(240, 223, 181);
@@ -25,6 +51,16 @@ p{
     font-family: roc-grotesk-wide, sans-serif;
     font-weight: 500;
     font-style: normal;
+}
+
+form{
+    font-family: gopher, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.test{
+    height: 10vh;
 }
 
 .nav-link{
@@ -41,11 +77,29 @@ p{
     background-size: cover;
     min-height: 400px;
 }
+.hero-shop{
+    background-image: url(imgs2/PelHero.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+}
 .space{
     height: 200px;
 }
 
+.btn{
+    font-family: roc-grotesk-wide, sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+}
 
+.bi-bag-heart{
+    font-size: 18px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2832, 14, 3, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
 
 .half-line{
     line-height: .75 !important;
@@ -55,6 +109,9 @@ p{
 }
 .high-m-2{
     max-height: 300px;
+}
+.high{
+    height: 50px;
 }
 
 .opacity{
@@ -77,37 +134,21 @@ p{
     background-color: transparent !important;
 }
 .card-body{
-    background-color: var(--lighgtnude)!important;
+    background-color: var(--lightnude)!important;
 }
 
 .bg-nude{
     background-color: var(--nude);
 }
 .bg-ln{
-    background-color: var(--lighgtnude);
-}
-
-.bg-pg{
-    background-color: var(--phhtalogreen);
-}
-.bg-dsb{
-    background-color: var(--darkskyblue);
-}
-.bg-fsb{
-    background-color: var(--frenchskyblue);
-}
-.bg-tg{
-    background-color: var(--teagreen);
-}
-.bg-hd{
-    background-color: var(--honeydew);
+    background-color: var(--lightnude);
 }
 
 .right-sticky{
     position: sticky;
     height: 30vh;
     bottom: 0;
-    background-color: var(--phhtalogreen);
+    background-color: var(--lightnude);
 }
 
 
@@ -118,8 +159,8 @@ p{
     .right-sticky-md{
         position: sticky;
         top: 0;
-        height:100vh;
-        background-color: var(--phhtalogreen);
+        height:95vh;
+        background-color: var(--lightnude);
     }
     .hero-md{
         background-image: url(imgs2/PelHero.jpg);
@@ -138,18 +179,6 @@ p{
     height: 300px;
 }
 
-.high-md-b{
-    height: 60vh;
-}
-.high-md-b-2{
-    height: 30vh;
-}
-.high-md-b-3{
-    height: 20vh;
-}
-.high-md-b-4{
-    height: 15vh;
-}
 }
 
 
@@ -157,8 +186,8 @@ p{
     .right-sticky-lg{
         position: sticky;
         top: 0;
-        height:100vh;
-        background-color: var(--phhtalogreen);
+        height:98vh;
+        background-color: var(--lightnude);
     } 
 
     .hero-xl{
@@ -174,24 +203,6 @@ p{
 
     .half-line-xl{
         line-height: .5 !important;
-    }
-
-    .nav-width-xl{
-        max-width: 1024px !important;
-        margin-left: 60px;
-    }
-
-    .high-lg-b{
-        height: 60vh;
-    }
-    .high-lg-b-2{
-        height: 30vh;
-    }
-    .high-lg-b-3{
-        height: 20vh;
-    }
-    .high-lg-b-4{
-        height: 15vh;
     }
 
 }
