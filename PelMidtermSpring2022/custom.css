@@ -52,6 +52,9 @@ p{
     font-weight: 500;
     font-style: normal;
 }
+.logo-img-h{
+    height: 60px;
+}
 
 form{
     font-family: gopher, sans-serif;
@@ -59,8 +62,16 @@ form{
     font-style: normal;
 }
 
+.accordion-button{
+    background-color: rgb(240, 223, 181) !important;
+    color:rgb(32, 14, 3)!important;
+}
+
 .test{
     height: 10vh;
+}
+.test-2{
+    height:5vh;
 }
 
 .nav-link{
@@ -82,6 +93,12 @@ form{
     background-position: center;
     background-size: cover;
     min-height: 400px;
+}
+.hero-faq{
+    background-image: url(imgs2/faq_hero.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
 }
 .space{
     height: 200px;
@@ -105,7 +122,9 @@ form{
     line-height: .75 !important;
 }
 .high-m{
-    max-height: 100px;
+    max-height: 90px;
+    position: absolute;
+    top: -60px ;
 }
 .high-m-2{
     max-height: 300px;
@@ -115,19 +134,15 @@ form{
 }
 
 .opacity{
-    opacity: 0.65;
+    opacity: 0.45;
 }
 
-.pos{
-    position: absolute;
-}
 .hero-txt{
-    font-size: 160px;
-    position: relative;
-    top: -30px;
-    line-height: .7;
-    transform: translateX(-12%);
-    overflow: hidden;
+    font-size: 165px;
+    position: absolute;
+    top: 15px;
+    left: -35px;
+    line-height: .6;
 }
 
 .card{
@@ -138,10 +153,40 @@ form{
 }
 
 .bg-nude{
-    background-color: var(--nude);
+    background-color: var(--nude)!important;
 }
 .bg-ln{
-    background-color: var(--lightnude);
+    background-color: var(--lightnude)!important;
+}
+.ln{
+    color: var(--lightnude)!important;
+}
+.dn{
+    color: var(--darknude)!important;
+}
+.page-link{
+    background-color: var(--darknude);
+    color: var(--lightnude);
+}
+.num{
+    background-color: var(--lightnude) !important;
+    color: var(--darknude) !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.btn-outline-dark{
+    border-width: 2px;
+    border-color: var(--darknude) !important;
+    color: var(--darknude) !important;
+}
+.btn-outline-dark:hover{
+    background-color: var(--darknude) !important;
+    color: var(--nude) !important;
+}
+.btn-dark{
+    background-color: var(--darknude) !important;
+    color: var(--nude) !important; 
 }
 
 .right-sticky{
@@ -151,11 +196,28 @@ form{
     background-color: var(--lightnude);
 }
 
+.icon-img{
+    left: 95px;
+}
+
+.card-img-overlay{
+    border-style: solid;
+    border-color: var(--darknude);
+    border-width: 2px;
+}
+.accordion-item{
+    background-color: var(--lightnude);
+    border: 1px solid rgb(0, 0, 0);
+}
+.form-check-input:checked {
+    background-color: var(--darknude);
+    border-color: var(--darknude);
+}
 
 /* THIS IS PART OF THE MULTI ITEM CAROUSEL*/
 
 
-@media(min-width: 672px){
+@media(min-width: 768px){
     .right-sticky-md{
         position: sticky;
         top: 0;
@@ -168,9 +230,27 @@ form{
         background-size: cover;
         min-height: 500px;
     }
+    .hero-faq-md{
+        background-image: url(imgs2/faq_hero.jpeg);
+        background-position: center;
+        background-size: cover;
+        min-height: 350px;
+    }
+
+.hero-txt-md{
+    font-size: 185px;
+    position: absolute;
+    top: 100px;
+    left: 160px;
+    line-height: .65;
+    text-align: center;
+}
     
 .high-md{
     height: 50vh;
+}
+.icon-img-md{
+    left: -5px;
 }
 .half-line-md{
     line-height: .65 !important;
@@ -178,17 +258,26 @@ form{
 .space-md{
     height: 300px;
 }
+.ethics-h1-md{
+    font-size: 7.2vw;
+}
+.blog-h1-md{
+    font-size: 4.8vw;
+}
+.lead-md{
+    font-size: 1rem !important;
+}
 
 }
 
 
-@media(min-width: 960px){
+@media(min-width: 992px){
     .right-sticky-lg{
         position: sticky;
         top: 0;
         height:98vh;
         background-color: var(--lightnude);
-    } 
+    }
 
     .hero-xl{
         background-image: url(imgs2/PelHero.jpg);
@@ -196,13 +285,47 @@ form{
         background-size: cover;
         min-height: 600px;
     }
+    .hero-faq-xl{
+        background-image: url(imgs2/faq_hero.jpeg);
+        background-position: center;
+        background-size: cover;
+        min-height: 400px;
+    }
+    
+    .hero-txt-lg{
+        font-size: 230px;
+        position: absolute;
+        top: 110px;
+        left: 400px;
+        line-height: .6;
+        text-align: center;
+    } 
 
     .space-lg{
         height: 400px;
     }
+    .lead-md{
+        font-size: 1.5rem !important;
+    }
 
     .half-line-xl{
         line-height: .5 !important;
+    }
+    .icon-img-lg{
+        left: 5px;
+    }
+    .nav-mt-lg{
+        margin-top: 20px;
+    }
+    .cart-ml-lg{
+        margin-left: 40px;
+    }
+    .pad-lg{
+        padding-left: 30px;
+        padding-right: 20px;
+    }
+    .pl-lg{
+        padding-left: 40px;
     }
 
 }
