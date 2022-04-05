@@ -158,6 +158,9 @@ form{
 .bg-ln{
     background-color: var(--lightnude)!important;
 }
+.bg-dn{
+    background-color: var(--darknude)!important;
+}
 .ln{
     color: var(--lightnude)!important;
 }
