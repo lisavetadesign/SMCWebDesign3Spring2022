@@ -68,7 +68,11 @@ form{
 }
 
 .test{
-    height: 15vh;
+    height: 20vh;
+}
+.no{
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link{
@@ -135,7 +139,7 @@ form{
 }
 
 .hero-txt{
-    font-size: 165px;
+    font-size: 26vh;
     position: absolute;
     top: 15px;
     left: -35px;
@@ -201,7 +205,7 @@ form{
 }
 
 .card-img-overlay{
-    border-style: solid;
+    border-style: none;
     border-color: var(--darknude);
     border-width: 2px;
 }
@@ -213,8 +217,30 @@ form{
     background-color: var(--darknude);
     border-color: var(--darknude);
 }
-
-/* THIS IS PART OF THE MULTI ITEM CAROUSEL*/
+.carousel-control-next{
+    height: 360px !important;
+}
+.carousel-control-prev{
+    height: 360px !important;
+}
+.line-high{
+    line-height: .8;
+}
+.bg-texture-a{
+    background-image: url(imgs2/blogtexturea.jpg);
+}
+.bg-texture-b{
+    background-image: url(imgs2/blogtextureb.jpeg);
+}
+.bg-texture-c{
+    background-image: url(imgs2/blogtexturec.jpg);
+}
+.bg-texture-d{
+    background-image: url(imgs2/blogtextured.jpg);
+}
+.blog-hh{
+    height: 45vh;
+}
 
 
 @media(min-width: 768px){
@@ -238,7 +264,7 @@ form{
     }
 
 .hero-txt-md{
-    font-size: 185px;
+    font-size: 32vh;
     position: absolute;
     top: 100px;
     left: 160px;
@@ -267,6 +293,17 @@ form{
 .lead-md{
     font-size: 1rem !important;
 }
+.card-img-overlay{
+    border-style: solid;
+    border-color: var(--darknude);
+    border-width: 2px;
+}
+.blog-h-md{
+    height: 30vh;
+}
+.blog-hh-md{
+    height: 30vh;
+}
 
 }
 
@@ -293,11 +330,11 @@ form{
     }
     
     .hero-txt-lg{
-        font-size: 230px;
+        font-size: 40vh;
         position: absolute;
-        top: 110px;
+        top: 10px;
         left: 400px;
-        line-height: .6;
+        line-height: .75;
         text-align: center;
     } 
 
@@ -317,8 +354,8 @@ form{
     .nav-mt-lg{
         margin-top: 20px;
     }
-    .cart-ml-lg{
-        margin-left: 40px;
+    .nav-ml-lg{
+        margin-left: 43px;
     }
     .pad-lg{
         padding-left: 30px;
@@ -326,6 +363,14 @@ form{
     }
     .pl-lg{
         padding-left: 40px;
+    }
+    .card-img-overlay{
+        border-style: solid;
+        border-color: var(--darknude);
+        border-width: 2px;
+    }
+    .blog-h-lg{
+        height: 45vh;
     }
 
 }
