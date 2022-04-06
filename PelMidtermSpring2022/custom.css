@@ -139,7 +139,7 @@ form{
 }
 
 .hero-txt{
-    font-size: 26vh;
+    font-size: 150px;
     position: absolute;
     top: 15px;
     left: -35px;
@@ -264,7 +264,7 @@ form{
     }
 
 .hero-txt-md{
-    font-size: 32vh;
+    font-size: 190px;
     position: absolute;
     top: 100px;
     left: 160px;
@@ -330,7 +330,7 @@ form{
     }
     
     .hero-txt-lg{
-        font-size: 40vh;
+        font-size: 220px;
         position: absolute;
         top: 10px;
         left: 400px;
