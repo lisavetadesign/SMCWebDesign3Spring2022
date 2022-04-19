@@ -1,0 +1,20 @@
+h1, h2, h3, h4, h5, h6{
+font-family: 'Cabin Sketch', cursive !important;
+}
+p{
+font-family: 'Poppins', sans-serif !important;
+}
+.navbar{
+    background-image: linear-gradient(to right, rgb(91, 199, 127), rgb(3, 49, 18) 60%, rgb(91, 199, 127));
+}
+.nav-link{
+    color:rgb(3, 49, 18) !important;
+}
+.navbar-brand{
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 40px;
+}
+.navbar-brand:hover {
+    font-family: 'Rubik Microbe', cursive;
+    font-size: 45px;
+  }
