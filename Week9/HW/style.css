@@ -11,10 +11,16 @@ font-family: 'Poppins', sans-serif !important;
     color:rgb(3, 49, 18) !important;
 }
 .navbar-brand{
-    font-family: 'Rubik Moonrocks', cursive;
-    font-size: 40px;
+    font-family: 'Cabin Sketch', cursive !important;
+    font-size: 30px;
+    font-weight: 400;
+    transition-property: font-weight;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
 }
-.navbar-brand:hover {
-    font-family: 'Rubik Microbe', cursive;
-    font-size: 45px;
-  }
+.navbar-brand:hover{
+    font-weight: 700;
+}
+
+
