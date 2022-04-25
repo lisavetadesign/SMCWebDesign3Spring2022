@@ -1,26 +1,99 @@
-h1, h2, h3, h4, h5, h6{
-font-family: 'Cabin Sketch', cursive !important;
-}
-p{
-font-family: 'Poppins', sans-serif !important;
-}
+
 .navbar{
-    background-image: linear-gradient(to right, rgb(91, 199, 127), rgb(3, 49, 18) 60%, rgb(91, 199, 127));
+    background-image: linear-gradient(0deg, rgba(4,19,59,1) 4%, rgba(0,116,251,1) 7%, rgba(150,28,160,1) 11%, rgba(8,30,87,1) 15%, rgba(0,0,0,1) 95%);
 }
 .nav-link{
-    color:rgb(3, 49, 18) !important;
-}
-.navbar-brand{
-    font-family: 'Cabin Sketch', cursive !important;
-    font-size: 30px;
+    font-family: 'Redacted Script', cursive !important;
+    color:rgb(0, 191, 255) !important;
     font-weight: 400;
     transition-property: font-weight;
     transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+    transition-delay: 3ms;
 }
-.navbar-brand:hover{
+
+.nav-link:hover{
     font-weight: 700;
+}
+.bgdark{
+    background-color: black;
+}
+.high{
+    height:150px;
+}
+.navbar-brand{
+    font-family: 'Jura', sans-serif !important;
+    font-size: 30px;
+    color: rgb(255, 0, 157) !important;
+}
+
+.translateDA div{
+    background: url("imgs/Dancer1B.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateDA .imgB:hover{
+    transform: translate(25px);
+}
+.translateDC div{
+    background: url("imgs/Dancer2B.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateDC .imgB:hover{
+    transform: translate(25px);
+}
+.translateDE div{
+    background: url("imgs/Dancer3B.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateDE .imgB:hover{
+    transform: translate(25px);
+}
+.imgS:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+.translateQ div{
+    background: url("imgs/QuoteB.png");
+    background-size: contain;
+}
+
+.translateQ .imgB:hover{
+    transform: translate(-25px);
+}
+.translateGA div{
+    background: url("imgs/Girl1A.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateGA .imgB:hover{
+    transform: translate(25px);
+}
+.translateGC div{
+    background: url("imgs/Girl2A.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateGC .imgB:hover{
+    transform: translate(25px);
+}
+.translateGE div{
+    background: url("imgs/Girl3A.png");
+    background-size: contain;
+    opacity: .85;
+}
+
+.translateGE .imgB:hover{
+    transform: translate(25px);
+}
+.imgs{
+    opacity: .4;
 }
 
 

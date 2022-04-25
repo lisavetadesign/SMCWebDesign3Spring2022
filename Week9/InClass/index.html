@@ -8,8 +8,9 @@
     <title>CSS transitions & gradients</title>
     <style>
         section {
-            height: 350px;
+            height: 300px;
             position: relative;
+            margin: auto;
         }
 
         #gradient1 {
@@ -62,7 +63,7 @@
         section div{
             width:300px;
             height: 300px;
-            position: absolute
+            position: absolute;
         }
 
         .translate div{
@@ -76,12 +77,12 @@
         .translateIMG div{
             background: url("imgB.jpg");
             background-size: contain;
-            opacity: .5;
-            overflow:hidden;
+            opacity: .4;
         }
 
-        .translateIMG .imgB:active{
-            transform: translate(15px, 1px);
+        .translateIMG .imgB:focus{
+            transform: translate(15px);
+            overflow: hidden;
         }
 
         .imgs{
