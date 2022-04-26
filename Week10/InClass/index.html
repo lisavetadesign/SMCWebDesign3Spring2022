@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating the animatables</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            animation: bodyColor 4s;
+            position: relative;
+            height: 100vh;
+        }
+
+        .circle {
+            border-radius: 50%;
+            background-color: rgb(248, 227, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 0vh;
+            height: 0vh;
+            animation: circleGrow 5s 2s forwards;
+            z-index: 5;
+        }
+
+        .rect {
+            height: 25vh;
+            width: 100vw;
+            position: absolute;
+        }
+
+        #rect1 {
+            background-color: #0814DF;
+            /* right:-100vw; */
+            top: 0;
+            animation-name: RtoL;
+            animation-duration: 3s;
+            /* animation-fill-mode: forwards; */
+        }
+
+        #rect2 {
+            background-color: #00b795;
+            left: -100vw;
+            top: 25vh;
+            animation-name: LtoR;
+            animation-duration: 3s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        #rect3 {
+            background-color: #61009e;
+            right: -100vw;
+            top: 50vh;
+            animation-name: RtoL;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        #rect4 {
+            background-color: #d10057;
+            /* left:-100vw; */
+            top: 75vh;
+            animation-name: LtoR;
+            animation-duration: 4s;
+            /* animation-fill-mode: forwards; */
+        }
+
+        main {
+            width: 960px;
+            position: absolute;
+            top: 20vh;
+            left: 10vh;
+            animation: showMain 3s 4500ms forwards;
+            opacity: 0;
+            z-index: 10;
+        }
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        p{
+            font-family:Arial, Helvetica, sans-serif;
+            column-count: 2;
+            column-gap: 60px;
+            text-align: justify;
+        }
+
+        /* ANIMATIONS */
+        @keyframes RtoL {
+            from {
+                right: -100vw;
+            }
+
+            to {
+                right: 0vw;
+            }
+        }
+
+        @keyframes LtoR {
+            from {
+                left: -100vw;
+            }
+
+            to {
+                left: 0vw;
+            }
+        }
+
+        @keyframes bodyColor {
+            from {
+                background-color: rgb(183, 234, 255);
+            }
+
+            to {
+                background-color: rgb(248, 227, 255);
+            }
+        }
+
+        @keyframes circleGrow {
+            0% {
+                background-color: #0814DF;
+                width: 0vw;
+                height: 0vh;
+            }
+
+            15% {
+                background-color: #00b795;
+
+            }
+
+            30% {
+                background-color: #61009e;
+
+            }
+
+            45% {
+                background-color: #d10057;
+
+            }
+
+            60% {
+                background-color: rgb(248, 227, 255);
+            }
+
+            100% {
+                width: max(200vw, 150vh);
+                height: max(200vw, 150vh);
+                background-color: rgb(248, 227, 255);
+            }
+        }
+        @keyframes showMain{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="rect" id="rect1"></div>
+    <div class="rect" id="rect2"></div>
+    <div class="rect" id="rect3"></div>
+    <div class="rect" id="rect4"></div>
+    <main>
+        <h1>CSS Animation Sample</h1>
+        <p>
+            I'm baby +1 meditation tacos umami prism, seitan affogato beard poke kickstarter pop-up tilde before they
+            sold out kitsch. IPhone swag artisan, man bun squid cornhole biodiesel 3 wolf moon sustainable tattooed
+            activated charcoal pinterest roof party hexagon live-edge. Pickled wolf edison bulb, ugh microdosing
+            biodiesel pork belly +1 whatever organic etsy shabby chic. Celiac irony ugh, flannel ethical church-key
+            pinterest microdosing cornhole cronut. Iceland drinking vinegar lumbersexual letterpress everyday carry.
+
+            Cold-pressed biodiesel prism stumptown tbh glossier readymade fanny pack kogi. Ethical selfies readymade
+            etsy truffaut meggings tote bag kitsch art party. Heirloom tilde intelligentsia typewriter, synth food truck
+            brooklyn live-edge master cleanse deep v vinyl pour-over art party celiac coloring book. Put a bird on it
+            sustainable gentrify 90's raclette franzen. Williamsburg pickled gluten-free, hella shabby chic direct trade wolf blog.
+        </p>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
