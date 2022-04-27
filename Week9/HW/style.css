@@ -1,4 +1,3 @@
-
 .navbar{
     background-image: linear-gradient(0deg, rgba(4,19,59,1) 4%, rgba(0,116,251,1) 7%, rgba(150,28,160,1) 11%, rgba(8,30,87,1) 15%, rgba(0,0,0,1) 95%);
 }
@@ -23,78 +22,100 @@
 .high{
     height:100px;
 }
+#navbrand{
+    color: hotpink;
+}
 .navbar-brand{
     font-family: 'Jura', sans-serif !important;
     font-size: 30px;
-    color: rgb(255, 0, 157) !important;
 }
 
-.translateDA div{
+.translate div{
+    opacity: .85;
+    overflow: hidden;
+}
+
+#DA div{
     background: url("imgs/Dancer1B.png");
     background-size: contain;
-    opacity: .85;
 }
-
-.translateDA .imgB:hover{
-    transform: translate(25px);
-}
-.translateDC div{
+#DB div{
     background: url("imgs/Dancer2B.png");
     background-size: contain;
-    opacity: .85;
 }
-
-.translateDC .imgB:hover{
-    transform: translate(25px);
-}
-.translateDE div{
+#DC div{
     background: url("imgs/Dancer3B.png");
     background-size: contain;
-    opacity: .85;
 }
 
-.translateDE .imgB:hover{
-    transform: translate(25px);
-}
-.imgS:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-.translateQ div{
+#Q div{
     background: url("imgs/QuoteB.png");
     background-size: contain;
 }
 
-.translateQ .imgB:hover{
+#GA div{
+    background: url("imgs/Girl1B.png");
+    background-size: contain;
+}
+#GB div{
+    background: url("imgs/Girl2B.png");
+    background-size: contain;
+}
+#GC div{
+    background: url("imgs/Girl3B.png");
+    background-size: contain;
+
+}
+
+
+
+#DA .imgB:hover{
+    transform: translate(25px) rotate(3deg);
+}
+
+#DB .imgB:hover{
+    transform: translate(0px, 15px);
+    filter: contrast(200%) blur(2px);
+}
+
+#DC .imgB:hover{
+    transform: translate(25px) rotate(-3deg);
+}
+
+#Q .imgB:hover{
+    transform: translate(-25px, -50px);
+    filter:brightness(8);
+}
+
+#GA .imgB:hover{
     transform: translate(-25px);
-}
-.translateGA div{
-    background: url("imgs/Girl1A.png");
-    background-size: contain;
-    opacity: .85;
+    filter: blur(5px);
+
 }
 
-.translateGA .imgB:hover{
-    transform: translate(25px);
-}
-.translateGC div{
-    background: url("imgs/Girl2A.png");
-    background-size: contain;
-    opacity: .85;
+#GB .imgB:hover{
+    transform: rotate(180deg);
+    filter: hue-rotate(30deg);
 }
 
-.translateGC .imgB:hover{
+#GC .imgB:hover{
     transform: translate(25px);
-}
-.translateGE div{
-    background: url("imgs/Girl3A.png");
-    background-size: contain;
-    opacity: .85;
+    filter: blur(5px);
 }
 
-.translateGE .imgB:hover{
-    transform: translate(25px);
-}
+.imgA:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: contrast(3) hue-rotate(60deg);
+  }
+
+  .imgC:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: contrast(4) hue-rotate(240deg);
+  }
+
+
 .imgs{
     opacity: .4;
 }
