@@ -83,7 +83,7 @@
 }
 
 #Q .imgB:hover{
-    transform: translate(-25px, -50px);
+    transform: translate(-25px, -15px);
     filter:brightness(8);
 }
 
