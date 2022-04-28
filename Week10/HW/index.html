@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimateStuff</title>
+    <style>
+        body{
+            margin: 0;
+            position: relative;
+            height: 100vh;
+            background-color: hsl(0, 0%, 0%);
+        }
+
+        h1{
+            color: hsl(100, 100%, 100%);
+            font-size: 10em;
+            font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+        }
+
+        .move{
+            position: absolute;
+            top:25%;
+            left: 30%;
+            animation: play 5s infinite;
+        }
+        .moveA{
+            position: absolute;
+            top:25%;
+            left: 28%;
+            opacity: .5;
+            animation: playA 4750ms 250ms infinite;
+        }
+
+        @keyframes play{
+            0%{
+                left:30%
+            }
+            50%{
+                left:50%
+            }
+            100%{
+                left:30%
+            }
+        }
+
+        @keyframes playA{
+            0%{
+                left:28%
+            }
+            50%{
+                left:50%
+            }
+            100%{
+                left:28%
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="move">Hello</h1>
+            <h1 class="moveA">Hello</h1>
+        </section>
+    </main>
+</body>
+</html>
