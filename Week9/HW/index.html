@@ -106,13 +106,17 @@
         </section>
     </footer>
     <script>
+        let colorVariableA = document.documentElement.style.getPropertyValue('--neonpink');
+        let colorVariableB = document.documentElement.style.getPropertyValue('--neonblue');
+        
+        document.documentElement.style.getPropertyValue(colorVariableA, 'blue');
+
         function myFunction() {
-            document.getElementById("navbrand")
             let x = document.getElementById("navbrand");
-            if (x.style.color === "turquoise") {
-                x.style.color = "hotpink";
+            if (x.style.color === colorVariableB) {
+                x.style.color = colorVariableA;
             } else {
-                x.style.color = "turquoise";
+                x.style.color = colorVariableB;
             }
         }
         document.getElementById("navbrand").addEventListener("click", myFunction)
