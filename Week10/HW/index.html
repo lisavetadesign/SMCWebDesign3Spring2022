@@ -21,8 +21,22 @@
         p {
             font-family: Arial, Helvetica, sans-serif;
             column-count: 2;
-            column-gap: 5vw;
-            text-align: left;
+            column-gap: 60px;
+            text-align: justify;
+        }
+        a:link{
+            color:hsl(0, 100%, 100%);
+            opacity: 0;
+            text-decoration: none;
+            animation: view 250ms 4s forwards;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        a:visited {
+            color: hsl(0, 100%, 100%);
+            text-decoration: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
         }
 
         .contain {
@@ -39,56 +53,55 @@
             z-index: 10;
             animation: widthgrow 2500ms 2s forwards;
         }
-        .headline{
-            position: absolute;
-            max-width: 60vw;
-            top: 20vh;
-            left: 25vw;
+        .maingrid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px 1fr 1fr 80px; 
+            column-gap: 20px;
+            row-gap: 25px;
+        }
+        .containhead{
+            position: relative;
+            grid-column: 2/span 2;
+            grid-row: 2/span 1;
+
+        }
+        .headline {
             opacity: 0;
-            z-index: 10;
-            color: rgb(255, 255, 255);
+            position: absolute;
             animation: view 250ms 4s forwards;
-            animation: heading 350ms 4250ms infinite;
+        }
+        .headline-1 {
+            left: 3px;
+            z-index: 10;
+            color: hsl(0, 100%, 100%);
+            animation: heading1 350ms 4250ms infinite;
         }
         .headline-2{
-            position: absolute;
-            max-width: 60vw;
-            top: 20vh;
-            left: 25vw;
-            opacity: 0;
+            top: 3px;
             z-index: 9;
             color: hsl(180, 100%, 50%);
-            animation: view 250ms 4s forwards;
             animation: heading2 300ms 4250ms infinite;
         }
         .headline-3{
-            position: absolute;
-            max-width: 60vw;
-            top: 20vh;
-            left: 25vw;
-            opacity: 0;
+            left:3px;
             z-index: 8;
             color: hsl(300, 100%, 50%);
-            animation: view 250ms 4s forwards;
             animation: heading3 300ms 4250ms infinite;
         }
         .headline-4{
-            position: absolute;
-            max-width: 60vw;
-            top: 20vh;
-            left: 25vw;
-            opacity: 0;
             z-index: 7;
             color: hsl(60, 100%, 50%);
-            animation: view 250ms 4s forwards;
+            left:3px;
             animation: heading4 350ms 4250ms infinite;
         }
-
+        .endrow{
+            grid-column: 2/span 1;
+            grid-row: 4/span 1;   
+        }
         .maincopy {
-            position: absolute;
-            max-width: 60vw;
-            top: 50vh;
-            left: 25vw;
+            grid-column: 2/span 2;
+            grid-row: 3/span 1;
             opacity: 0;
             z-index: 10;
             color: rgb(224, 224, 224);
@@ -170,72 +183,66 @@
                 opacity: 1;
             }
         }
-        @keyframes heading {
+        @keyframes heading1 {
             0% {
                 opacity: .6;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
             }
             50%{
                 opacity: 1;
-                top: 20vh;
-                left:25.9vw;
+                top: 8px;
             }
             100% {
                 opacity: .6;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
             }
         }
         @keyframes heading2 {
             0% {
                 opacity: .5;
-                top: 20vh;
-                left: 25vw;
+                left: 3px;
             }
             50%{
                 opacity: 1;
-                top: 20.7vh;
-                left:25.8vw;
+                left: 10px;
             }
             100% {
                 opacity: .5;
-                top: 20vh;
-                left: 25vw;
+                left: 3px;
             }
         }
         @keyframes heading3 {
             0% {
                 opacity: .8;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
+                left: 0px;
             }
             50%{
                 opacity: 1;
-                top: 19.4vh;
-                left:24.6vw;
+                top: 8px;
+                left: 4px;
             }
             100% {
                 opacity: .8;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
+                left: 0px;
             }
         }
         @keyframes heading4 {
             0% {
                 opacity: .7;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
+                left: 0px;
             }
             50%{
                 opacity: 1;
-                top: 20vh;
-                left:24.4vw;
+                top: -2px;
+                left: -3px;
             }
             100% {
                 opacity: .7;
-                top: 20vh;
-                left: 25vw;
+                top: 3px;
+                left: 0px;
             }
         }
     </style>
@@ -253,11 +260,13 @@
             <div class="bg-grid-7 rect"></div>
             <div class="bg-grid-8 rect"></div>
         </div>
-        <div>
-            <h1 class="headline">Hello</h1>
-            <h1 class="headline-2">Hello</h1>
-            <h1 class="headline-3">Hello</h1>
-            <h1 class="headline-4">Hello</h1>
+        <div class="maingrid">
+            <div class="containhead">
+                <h1 class="headline headline-1">Hello</h1>
+                <h1 class="headline headline-2">Hello</h1>
+                <h1 class="headline headline-3">Hello</h1>
+                <h1 class="headline headline-4">Hello</h1>
+            </div>
             <p class="maincopy">Portland cardigan tumblr yuccie iPhone slow-carb chillwave four dollar toast vice vegan mlkshk organic
                 shoreditch pop-up. PBR&B prism cray, cred cardigan cold-pressed dreamcatcher aesthetic unicorn iceland.
                 Tonx activated charcoal dreamcatcher narwhal air plant microdosing blue bottle, tumeric cloud bread
@@ -275,6 +284,9 @@
                 moon asymmetrical succulents air plant selfies austin. Tacos vaporware hoodie, quinoa +1 hella banh mi
                 man bun la croix food truck poutine vegan cornhole raclette lo-fi.
             </p>
+            <div class="endrow">
+                <a href="https://codepen.io/lisavetadesign/pen/bGaXGpV">Vist codepen for a surprise!</a>
+            </div>
 
         </div>
     </main>
