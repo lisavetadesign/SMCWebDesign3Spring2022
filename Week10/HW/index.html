@@ -46,8 +46,9 @@
             left: 25vw;
             opacity: 0;
             z-index: 10;
-            color: rgb(255, 253, 253);
+            color: rgb(255, 255, 255);
             animation: view 250ms 4s forwards;
+            animation: heading 350ms 4250ms infinite;
         }
         .headline-2{
             position: absolute;
@@ -167,6 +168,23 @@
 
             100% {
                 opacity: 1;
+            }
+        }
+        @keyframes heading {
+            0% {
+                opacity: .6;
+                top: 20vh;
+                left: 25vw;
+            }
+            50%{
+                opacity: 1;
+                top: 20vh;
+                left:25.9vw;
+            }
+            100% {
+                opacity: .6;
+                top: 20vh;
+                left: 25vw;
             }
         }
         @keyframes heading2 {
