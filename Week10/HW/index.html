@@ -1,69 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimateStuff</title>
     <style>
-        body{
-            margin: 0;
+        body {
+            overflow: hidden;
+            background-color: rgb(10, 10, 10);
             position: relative;
+        }
+
+        h1 {
+            font-size: 16vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            column-count: 2;
+            column-gap: 5vw;
+            text-align: left;
+        }
+
+        .contain {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            position: relative;
+            z-index: 1;
+        }
+
+        .rect {
             height: 100vh;
-            background-color: hsl(0, 0%, 0%);
-        }
-
-        h1{
-            color: hsl(100, 100%, 100%);
-            font-size: 10em;
-            font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
-        }
-
-        .move{
+            width: 12.5vw;
             position: absolute;
-            top:25%;
-            left: 30%;
-            animation: play 5s infinite;
+            z-index: 10;
+            animation: widthgrow 2500ms 2s forwards;
         }
-        .moveA{
+        .headline{
             position: absolute;
-            top:25%;
-            left: 28%;
-            opacity: .5;
-            animation: playA 4750ms 250ms infinite;
+            max-width: 60vw;
+            top: 20vh;
+            left: 25vw;
+            opacity: 0;
+            z-index: 10;
+            color: rgb(255, 253, 253);
+            animation: view 250ms 4s forwards;
+        }
+        .headline-2{
+            position: absolute;
+            max-width: 60vw;
+            top: 20vh;
+            left: 25vw;
+            opacity: 0;
+            z-index: 9;
+            color: hsl(180, 100%, 50%);
+            animation: view 250ms 4s forwards;
+            animation: heading2 300ms 4250ms infinite;
+        }
+        .headline-3{
+            position: absolute;
+            max-width: 60vw;
+            top: 20vh;
+            left: 25vw;
+            opacity: 0;
+            z-index: 8;
+            color: hsl(300, 100%, 50%);
+            animation: view 250ms 4s forwards;
+            animation: heading3 300ms 4250ms infinite;
+        }
+        .headline-4{
+            position: absolute;
+            max-width: 60vw;
+            top: 20vh;
+            left: 25vw;
+            opacity: 0;
+            z-index: 7;
+            color: hsl(60, 100%, 50%);
+            animation: view 250ms 4s forwards;
+            animation: heading4 350ms 4250ms infinite;
         }
 
-        @keyframes play{
-            0%{
-                left:30%
+        .maincopy {
+            position: absolute;
+            max-width: 60vw;
+            top: 50vh;
+            left: 25vw;
+            opacity: 0;
+            z-index: 10;
+            color: rgb(224, 224, 224);
+            animation: view 250ms 4s forwards;
+        }
+
+        .bg-grid-1 {
+            grid-column: 1/span 1;
+            background-image: url(AAimgs/AAimg1.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-2 {
+            grid-column: 2/span 1;
+            background-image: url(AAimgs/AAimg2.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-3 {
+            grid-column: 3/span 1;
+            background-image: url(AAimgs/AAimg3.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-4 {
+            grid-column: 4/span 1;
+            background-image: url(AAimgs/AAimg4.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-5 {
+            grid-column: 5/span 1;
+            background-image: url(AAimgs/AAimg5.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-6 {
+            grid-column: 6/span 1;
+            background-image: url(AAimgs/AAimg6.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-7 {
+            grid-column: 7/span 1;
+            background-image: url(AAimgs/AAimg7.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        .bg-grid-8 {
+            grid-column: 8/span 1;
+            background-image: url(AAimgs/AAimg8.jpg);
+            background-repeat: no-repeat;
+            background-size: calc(12.5vw);
+        }
+
+        @keyframes widthgrow {
+            0% {
+                width: 12.5vw;
+            }
+
+            100% {
+                width: 0.05vw;
+            }
+        }
+
+        @keyframes view {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes heading2 {
+            0% {
+                opacity: .5;
+                top: 20vh;
+                left: 25vw;
             }
             50%{
-                left:50%
+                opacity: 1;
+                top: 20.7vh;
+                left:25.8vw;
             }
-            100%{
-                left:30%
+            100% {
+                opacity: .5;
+                top: 20vh;
+                left: 25vw;
             }
         }
-
-        @keyframes playA{
-            0%{
-                left:28%
+        @keyframes heading3 {
+            0% {
+                opacity: .8;
+                top: 20vh;
+                left: 25vw;
             }
             50%{
-                left:50%
+                opacity: 1;
+                top: 19.4vh;
+                left:24.6vw;
             }
-            100%{
-                left:28%
+            100% {
+                opacity: .8;
+                top: 20vh;
+                left: 25vw;
+            }
+        }
+        @keyframes heading4 {
+            0% {
+                opacity: .7;
+                top: 20vh;
+                left: 25vw;
+            }
+            50%{
+                opacity: 1;
+                top: 20vh;
+                left:24.4vw;
+            }
+            100% {
+                opacity: .7;
+                top: 20vh;
+                left: 25vw;
             }
         }
     </style>
 </head>
+
 <body>
     <main>
-        <section>
-            <h1 class="move">Hello</h1>
-            <h1 class="moveA">Hello</h1>
-        </section>
+        <div class="contain">
+            <div class="bg-grid-1 rect"></div>
+            <div class="bg-grid-2 rect"></div>
+            <div class="bg-grid-3 rect"></div>
+            <div class="bg-grid-4 rect"></div>
+            <div class="bg-grid-5 rect"></div>
+            <div class="bg-grid-6 rect"></div>
+            <div class="bg-grid-7 rect"></div>
+            <div class="bg-grid-8 rect"></div>
+        </div>
+        <div>
+            <h1 class="headline">Hello</h1>
+            <h1 class="headline-2">Hello</h1>
+            <h1 class="headline-3">Hello</h1>
+            <h1 class="headline-4">Hello</h1>
+            <p class="maincopy">Portland cardigan tumblr yuccie iPhone slow-carb chillwave four dollar toast vice vegan mlkshk organic
+                shoreditch pop-up. PBR&B prism cray, cred cardigan cold-pressed dreamcatcher aesthetic unicorn iceland.
+                Tonx activated charcoal dreamcatcher narwhal air plant microdosing blue bottle, tumeric cloud bread
+                yuccie lomo quinoa echo park. Ethical marfa before they sold out, copper mug franzen pop-up etsy prism
+                food truck lumbersexual scenester umami art party poke. Enamel pin tote bag letterpress plaid viral
+                occupy unicorn tofu crucifix. Bicycle rights sustainable wolf, wayfarers mixtape selfies man bun
+                actually prism listicle lomo cornhole affogato. Health goth live-edge tbh shabby chic chia viral small
+                batch taiyaki.
+
+                Offal fixie blue bottle tilde yes plz shoreditch actually banjo drinking vinegar. Humblebrag fam yr,
+                vegan artisan YOLO food truck beard fingerstache pug yuccie pitchfork 90's shaman. Put a bird on it tbh
+                man bun selfies, unicorn succulents raw denim umami biodiesel helvetica pour-over meditation coloring
+                book. Drinking vinegar ethical bicycle rights twee, blog vegan quinoa bushwick narwhal keffiyeh
+                activated charcoal. DSA tattooed hot chicken +1 mumblecore skateboard aesthetic cronut bushwick 3 wolf
+                moon asymmetrical succulents air plant selfies austin. Tacos vaporware hoodie, quinoa +1 hella banh mi
+                man bun la croix food truck poutine vegan cornhole raclette lo-fi.
+            </p>
+
+        </div>
     </main>
 </body>
+
 </html>
