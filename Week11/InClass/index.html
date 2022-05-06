@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Multimedia & Embeds</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <video controls muted loop
+                        poster="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iu.FTwI5vuqY/v1/1200x-1.jpg">
+                        <!-- Can a source be a youtube/vimeo video? -->
+                        <source src="media/small.mp4" type="video/mp4">
+                        <source src="media/small.ogv" type="video/ogg">
+                        <source src="media/small.webm" type="video/webm">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <audio controls class="w-100">
+                        <!-- Can a source be a soundcloud song? -->
+                        <source src="media/week12_multimedia_embeds_media_sample.mp3" type="audio/mpeg">
+                        <source src="media/week12_multimedia_embeds_media_sample.ogg" type="audio/ogg">
+                        <source src="media/week12_multimedia_embeds_media_sample.wav" type="audio/wav">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <iframe src="https://en.wikipedia.org/wiki/Oasis_hummingbird" class="w-100"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="">
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1245609985&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.622504107859!2d-118.46630197974433!3d34.03049781584187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb3f38a17ce5%3A0x7da01addfe95c655!2sCenter%20for%20Media%20and%20Design!5e0!3m2!1sen!2sus!4v1651649583630!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                    <object data="media/the-basics-of-ux-design.pdf" class="w-100" height="600">
+                        <a href="media/the-basics-of-ux-design.pdf">Download here!</a>
+                    </object>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
