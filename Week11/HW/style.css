@@ -33,13 +33,22 @@ p{
     height: auto;
     max-width: 80px;
 }
+.nav-item{
+    font-size: 18px!important;
+}
+
 .nav-link{
     font-family: 'Bebas Neue', cursive !important;
     font-weight: 400 !important;
     color: hsl(100,100%,100%)!important;
     transition-property: font-weight !important;
-    transition-duration: 500ms;
+    transition-duration: 250ms;
     background-color: hsla(100, 100%, 100%, 0);
+}
+
+.gradient{
+    background: linear-gradient(210deg, rgba(255,7,254,1) 0%, rgba(132,1,255,1) 30%, rgba(0,172,255,1) 70%, rgba(110,198,34,1) 100%) !important;
+    animation: hue-rotate 250ms linear infinite alternate;
 }
 
 .nav-link:hover{
@@ -64,13 +73,17 @@ p{
     font-weight: 700 !important;
 }
 .btn-outline-light:hover{
-    color: #f0e2e2 !important;
+    color: #000000 !important;
     font-family: 'Roboto', sans-serif !important;
-    background: linear-gradient(117deg, rgba(255,7,254,1) 0%, rgba(132,1,255,1) 30%, rgba(0,172,255,1) 70%, rgba(110,198,34,1) 100%) !important;
+    background: white;
     border-color: #f8f9fa00 !important;
 }
 .text-muted{
     color:#ffffff !important;
+}
+.cta-width{
+    max-width: 76vw;
+    margin: auto;
 }
 
 @media(min-width: 768px){
@@ -83,6 +96,10 @@ p{
         width: 90vw !important;
         margin: auto !important;
       }
+    .cta-width-md{
+        max-width: 28vw;
+        margin: auto;
+    }
     }
 
 @media(min-width: 992px){
@@ -92,7 +109,7 @@ p{
         margin-top: 8rem !important;
     }
 .ratio {
-    width: 80vw !important;
+    width: 80% !important;
     margin: auto !important;
   }
   .container, .container-lg, .container-md, .container-sm {
@@ -101,4 +118,18 @@ p{
   .pl-lg{
     padding-left: 15px !important;
   }
+  .cta-width-lg{
+    max-width: 30vw;
+    margin: auto;
+}
+}
+
+@keyframes hue-rotate{
+    0% { 
+        filter:hue-rotate(0) contrast(1);;}
+    50%{ 
+        filter: hue-rotate(45deg) contrast(2);}
+    100%{
+        filter:hue-rotate(0) contrast(1);;
+    }
 }
