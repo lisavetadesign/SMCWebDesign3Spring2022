@@ -1,3 +1,10 @@
+.container-fluid{
+    overflow: hidden !important;
+}
+.txt{
+    color: #0d0d0d !important;
+}
+
 h1{
     font-family: 'Bebas Neue', cursive !important;
     font-weight: 700 !important;
@@ -19,6 +26,11 @@ p{
 .card-title{
     font-family: 'Bebas Neue', cursive !important;
     font-size: 2rem !important;
+}
+
+.card{
+    justify-content: space-between !important;
+    height: 100% !important;
 }
 .bgdark{
     background-color: #000004;
@@ -47,8 +59,8 @@ p{
 }
 
 .gradient{
-    background: linear-gradient(210deg, rgba(255,7,254,1) 0%, rgba(132,1,255,1) 30%, rgba(0,172,255,1) 70%, rgba(110,198,34,1) 100%) !important;
-    animation: hue-rotate 250ms linear infinite alternate;
+    background: linear-gradient(210deg, rgba(255,7,254,1) 0%, rgba(132,1,255,1) 15%, rgba(0,172,255,1) 30%, rgba(110,198,34,1) 45%, rgba(0,172,255,1) 60%, rgba(132,1,255,1) 75%, rgba(255,7,254,1) 90%) !important;
+    animation: hue-rotate 5s linear infinite alternate;
 }
 
 .nav-link:hover{
@@ -82,9 +94,79 @@ p{
     color:#ffffff !important;
 }
 .cta-width{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     max-width: 76vw;
     margin: auto;
+    justify-content: space-between !important;
+    height: 100% !important;
 }
+html {
+    background: #222;
+  }
+  
+  .laser-beam {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 3px;
+    height: 500%;
+    z-index: -1;
+    background: rgba(99, 195, 231, 0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px #63c3e7;
+    -moz-box-shadow: 0px 0px 15px 0px #63c3e7;
+    box-shadow: 0px 0px 1px 0px #63c3e7;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    animation: laser 7s infinite;
+  }
+  .laser-beam.red {
+    animation: laser 7.5s infinite;
+    background: rgba(255, 7, 254, 0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px #ff07fe;
+    -moz-box-shadow: 0px 0px 15px 0px #ff07fe;
+    box-shadow: 0px 0px 15px 0px #ff07fe;
+  }
+  .laser-beam.purple {
+    animation: laser 7.3s infinite;
+    background: rgba(204, 102, 255, 0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px #cc66ff;
+    -moz-box-shadow: 0px 0px 15px 0px #cc66ff;
+    box-shadow: 0px 0px 15px 0px #cc66ff;
+  }
+  .laser-beam.green {
+    animation: laser 7.7s infinite;
+    background: rgba(86, 212, 69, 0.6);
+    -webkit-box-shadow: 0px 0px 15px 0px #56d445;
+    -moz-box-shadow: 0px 0px 15px 0px #56d445;
+    box-shadow: 0px 0px 15px 0px #56d445;
+  }
+  
+  @keyframes laser {
+    0% {
+      -moz-transform: rotate(-75deg);
+      -ms-transform: rotate(-75deg);
+      -webkit-transform: rotate(-75deg);
+      transform: rotate(-75deg);
+    }
+    50% {
+      -moz-transform: rotate(75deg);
+      -ms-transform: rotate(75deg);
+      -webkit-transform: rotate(75deg);
+      transform: rotate(75deg);
+    }
+    100% {
+      -moz-transform: rotate(-75deg);
+      -ms-transform: rotate(-75deg);
+      -webkit-transform: rotate(-75deg);
+      transform: rotate(-75deg);
+    }
+  }
+  
+  
 
 @media(min-width: 768px){
     h1{
@@ -92,13 +174,14 @@ p{
         line-height: 5.5rem !important;
         margin-top: 3.5rem !important;
     }
-    .ratio {
-        width: 90vw !important;
-        margin: auto !important;
-      }
     .cta-width-md{
+        position: relative;
+        display: flex;
+        flex-direction: column;
         max-width: 28vw;
         margin: auto;
+        justify-content: space-between !important;
+        height: 100% !important;
     }
     }
 
@@ -108,10 +191,6 @@ p{
         line-height: 8.5rem !important;
         margin-top: 8rem !important;
     }
-.ratio {
-    width: 80% !important;
-    margin: auto !important;
-  }
   .container, .container-lg, .container-md, .container-sm {
     max-width: 80vw !important;
   }
@@ -119,17 +198,30 @@ p{
     padding-left: 15px !important;
   }
   .cta-width-lg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     max-width: 30vw;
     margin: auto;
+    justify-content: space-between !important;
+    height: 100% !important;
 }
 }
 
 @keyframes hue-rotate{
     0% { 
-        filter:hue-rotate(0) contrast(1);;}
+        filter:hue-rotate(0) contrast(1);
+    }
+    25%{ 
+        filter: hue-rotate(45deg) contrast(1.5);
+    }
     50%{ 
-        filter: hue-rotate(45deg) contrast(2);}
+        filter: hue-rotate(90deg) contrast(2);
+    }
+    75%{ 
+        filter: hue-rotate(45deg) contrast(1.5);
+    }
     100%{
-        filter:hue-rotate(0) contrast(1);;
+        filter:hue-rotate(0) contrast(1);
     }
 }
