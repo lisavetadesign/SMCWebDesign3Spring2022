@@ -28,8 +28,8 @@ function setup(){
     posX = width/2;
     posY = height/2;
 
-    velX= 3;
-    velY= 1;
+    velX= 4;
+    velY= 3;
 
     circColor = color(50,90,80);
 
