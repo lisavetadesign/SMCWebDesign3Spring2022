@@ -1,0 +1,25 @@
+.spacer{
+    height: 6vh;
+}
+
+.testing{
+    height: 120px;
+    overflow: scroll;
+    scroll-behavior: auto;
+}
+
+.card{
+    border: none;
+}
+
+@media (min-width: 768px){
+    .spacer-md{
+        height: 8vh;
+    }
+}
+
+@media (min-width: 992px){
+    .spacer-lg{
+        height: 10vh;
+    }
+}
