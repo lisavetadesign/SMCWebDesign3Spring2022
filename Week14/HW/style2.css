@@ -1,0 +1,74 @@
+body{
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: monarcha, serif !important;
+}
+p{
+    font-family: raleway, sans-serif !important;
+}
+
+.bg-blueberry{
+    background-color: #16023E !important;
+}
+.bg-lightgreen{
+    background-color: #F9F6E5 !important;
+}
+.bg-teal{
+    background-color: #006251 !important;
+}
+.bg-sand{
+    background-color: #BEA6A0 !important;
+}
+
+.blueberry{
+    color: #16023E !important;
+}
+.lightgreen{
+    color: #F9F6E5 !important;
+}
+.teal{
+    color: #006251 !important;
+}
+.sand{
+    color: #BEA6A0 !important;
+}
+
+
+.spacer{
+    height: 6vh;
+}
+
+.testing{
+    height: 120px !important;
+    overflow: scroll !important;
+    scroll-behavior: auto;
+}
+
+.card{
+    border: none;
+}
+
+#heroVideo{
+    position: absolute;
+    right: 0px;
+}
+
+.heroContent{
+    position: absolute !important;
+    top:100px;
+    color: white !important;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px){
+    .spacer-md{
+        height: 8vh;
+    }
+}
+
+@media (min-width: 992px){
+    .spacer-lg{
+        height: 10vh;
+    }
+}

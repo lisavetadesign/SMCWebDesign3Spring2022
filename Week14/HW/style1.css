@@ -1,0 +1,73 @@
+body{
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: omnes-pro, sans-serif !important;
+}
+p{
+    font-family: brother-1816, sans-serif !important;
+}
+
+.bg-brightblue{
+    background-color: hsl(244, 92%, 41%) !important;
+}
+.bg-lightbluegrey{
+    background-color: hsl(191, 24%, 82%) !important;
+}
+.bg-almostblack{
+    background-color: hsl(263, 21%, 12%) !important;
+}
+.bg-teracotta{
+    background-color: hsl(25, 74%, 65%) !important;
+}
+
+.brightblue{
+    color: hsl(244, 92%, 41%) !important;
+}
+.lightbluegrey{
+    color: hsl(191, 24%, 82%) !important;
+}
+.almostblack{
+    color: hsl(263, 21%, 12%) !important;
+}
+.teracotta{
+    color: hsl(25, 74%, 65%) !important;
+}
+
+
+.spacer{
+    height: 6vh;
+}
+
+.testing{
+    height: 120px !important;
+    overflow: scroll !important;
+    scroll-behavior: auto;
+}
+
+.card{
+    border: none;
+}
+
+#heroVideo{
+    position: absolute;
+    right: 0px;
+}
+
+.heroContent{
+    position: absolute !important;
+    color: white !important;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px){
+    .spacer-md{
+        height: 8vh;
+    }
+}
+
+@media (min-width: 992px){
+    .spacer-lg{
+        height: 10vh;
+    }
+}
