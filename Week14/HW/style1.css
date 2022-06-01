@@ -55,7 +55,6 @@ p{
 }
 
 .heroContent{
-    position: absolute !important;
     color: white !important;
     background: rgba(0, 0, 0, 0.5);
 }
