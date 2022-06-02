@@ -1,0 +1,161 @@
+:root{
+    --blueberry: hsl(269, 94%, 13%) !important;
+    --lightgreen: hsl(51, 62%, 94%) !important;
+    --teal: hsl(170, 100%, 19%) !important;
+    --sand: hsl(12, 35%, 81%) !important;
+}
+
+body{
+    position: relative;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'monarcha', serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+}
+p{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+
+.bg-blueberry{
+    background-color: var(--blueberry) !important;
+}
+.bg-lightgreen{
+    background-color: var(--lightgreen) !important;
+}
+.bg-teal{
+    background-color: var(--teal) !important;
+}
+.bg-sand{
+    background-color: var(--sand) !important;
+}
+
+.blueberry{
+    color: var(--blueberry) !important;
+}
+.lightgreen{
+    color: var(--lightgreen) !important;
+}
+.teal{
+    color: var(--teal) !important;
+}
+.sand{
+    color: var(--sand)  !important;
+}
+
+.btn-outline-primary{
+    color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    font-family: raleway, sans-serif !important;
+    font-weight: 600 !important;
+}
+.btn-outline-primary:hover{
+    background-color: var(--blueberry) !important;
+    color: var(--lightgreen) !important;
+    border-color: var(--lightgreen) !important;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+}
+
+.btn-primary{
+    background-color: var(--blueberry) !important;
+    color: var(--lightgreen) !important;
+    border-color: var(--blueberry) !important;
+    font-family: raleway, sans-serif !important;
+    font-weight: 600 !important;
+}
+.btn-primary:hover{
+    background-color: hsl(261, 88%, 16%) !important;
+    color: var(--lightgreen) !important;
+    border-color: hsl(261, 88%, 16%) !important;
+    font-family: raleway, sans-serif !important;
+    font-weight: 600 !important;
+    font-style: italic !important;
+}
+
+.spacer{
+    height: 6vh;
+}
+
+.innerScrollArea{
+    height: 110px !important;
+    overflow: scroll !important;
+    scroll-behavior: auto;
+}
+.highlightText1{
+    font-family: 'Raleway', sans-serif !important;
+    font-style: italic !important;
+    font-weight: 600;
+}
+.card{
+    border: none;
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+}
+
+#heroVideo{
+    position: absolute;
+    right: 0px;
+}
+
+.heroContent{
+    position: absolute;
+    font-size: 21px;
+    line-height: 28px;
+    top: -32px;
+    padding: .8rem !important;
+    color: var(--blueberry) !important;
+    background: hsl(12, 35%, 81%, 0.6) !important;
+    width: 200px;
+}
+
+.nav-link{
+    font-family: raleway, sans-serif !important;
+    font-weight: 800 !important;
+    font-style: normal !important;
+    text-transform: uppercase;
+    color: hsl(260, 94%, 13%) !important;
+}
+.nav-link:hover{
+    font-family: raleway, sans-serif !important;
+    font-weight: 800 !important;
+    font-style: italic !important;
+    text-transform: uppercase;
+    color: hsl(260, 94%, 13%) !important;
+}
+
+@media (min-width: 768px){
+    .spacer-none-md{
+        height: 0vh;
+    }
+    .spacer-md{
+        height: 8vh;
+    }
+    .heroContent-md{
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--sand) !important;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (min-width: 992px){
+    .spacer-none-lg{
+        height: 0vh;
+    }
+    .spacer-lg{
+        height: 10vh;
+    }
+    .heroContent-lg{
+        font-size: 16px;
+        line-height: 22px;
+        color: white !important;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
