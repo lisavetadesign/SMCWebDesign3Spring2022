@@ -9,10 +9,11 @@ body{
     position: relative;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: 'monarcha', serif !important;
-    font-weight: 300 !important;
-    font-style: normal !important;
+    font-family: monarcha, serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 p{
     font-family: 'Raleway', sans-serif !important;
     font-weight: 400 !important;
@@ -99,11 +100,6 @@ p{
     height: auto;
 }
 
-#heroVideo{
-    position: absolute;
-    right: 0px;
-}
-
 .heroContent{
     position: absolute;
     font-size: 21px;
@@ -112,7 +108,7 @@ p{
     padding: .8rem !important;
     color: var(--blueberry) !important;
     background: hsl(12, 35%, 81%, 0.6) !important;
-    width: 200px;
+    width: 55vw;
 }
 
 .nav-link{
@@ -138,10 +134,14 @@ p{
         height: 8vh;
     }
     .heroContent-md{
-        font-size: 16px;
-        line-height: 22px;
-        color: var(--sand) !important;
-        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        font-size: 32px;
+        line-height: 48px;
+        top: 12px;
+        padding: 1rem !important;
+        color: var(--blueberry) !important;
+        background: hsl(12, 35%, 81%, 0.6) !important;
+        width: 50vw;
     }
 }
 
@@ -153,9 +153,13 @@ p{
         height: 10vh;
     }
     .heroContent-lg{
-        font-size: 16px;
-        line-height: 22px;
-        color: white !important;
-        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        font-size: 52px;
+        line-height: 72px;
+        top: 72px;
+        padding: 1.2rem !important;
+        color: var(--blueberry) !important;
+        background: hsl(12, 35%, 81%, 0.6) !important;
+        width: 40vw;
     }
 }
