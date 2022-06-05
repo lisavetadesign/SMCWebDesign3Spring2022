@@ -14,33 +14,40 @@
 </head>
 
 <body>
-    <header class="bg-dark text-white">
-        <nav class="navbar navbar-expand-lg bg-lightgreen blueberry" aria-label="Fifth navbar example">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="media/mescolanzaLogo.png" class="logo img-fluid"
-                    alt="mescolanza logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample05">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-lightgreen fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"><img src="media/mescolanzaLogo.png" class="logo img-fluid"
+                alt="mescolanza logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="media/mescolanzaLogo.png" class="logo img-fluid"
+                    alt="mescolanza logo"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item px-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="team.html">Team</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="about.html">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
                         </li>
                     </ul>
-                    <div class="text-end-lg px-3">
-                        <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <div class="text-end-lg">
+                        <button type="button" class="btn btn-outline-primary me-3">Login</button>
                         <button type="button" class="btn btn-primary">Sign-up</button>
                     </div>
                 </div>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <main class="bg-lightgreen">
         <section class="container-fluid">
@@ -51,7 +58,7 @@
         </section>
         <div class="spacer spacer-md spacer-lg"></div>
         <section class="container">
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-12 col-md-4 col-lg-5" data-aos="fade-right">
                     <img class="img-fluid" src="media/mescolanzaFamily1.jpg" alt="...">
                 </div>
@@ -81,7 +88,7 @@
                 </div>
             </div>
             <div class="spacer spacer-md spacer-lg"></div>
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-12 col-md-4 col-lg-5 order-md-3" data-aos="fade-right">
                     <img class="img-fluid" src="media/mescolanzaFamily2.jpg" alt="...">
                 </div>
@@ -111,7 +118,7 @@
                 </div>
             </div>
             <div class="spacer spacer-md spacer-lg"></div>
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-lg-1"></div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <img class="img-fluid" src="" alt="...">
@@ -141,7 +148,7 @@
                 </div>
             </div>
             <div class="spacer spacer-md spacer-lg"></div>
-            <div class="row">
+            <div class="row overflow-hidden">
                 <div class="col-lg-1"></div>
                 <div class="col-12 col-md-6 col-lg-4 order-md-2">
                     <img class="img-fluid" src="" alt="...">

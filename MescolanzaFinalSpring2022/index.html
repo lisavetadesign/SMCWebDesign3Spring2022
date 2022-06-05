@@ -18,81 +18,90 @@
 </head>
 
 <body>
-    <header class="bg-light text-black">
-        <nav class="navbar navbar-expand-lg bg-lightgreen" aria-label="Fifth navbar example">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-lighttealgreen fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="media/mescolanzaLogo.png" class="logo img-fluid"
                         alt="mescolanza logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="team.html">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
-                        </li>
-                    </ul>
-                    <div class="text-end-lg">
-                        <button type="button" class="btn btn-outline-primary me-3">Login</button>
-                        <button type="button" class="btn btn-primary">Sign-up</button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-lightgreen">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="media/mescolanzaLogo.png"
+                                class="logo img-fluid" alt="mescolanza logo"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-lighttealgreen">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item d-lg-none">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="team.html">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                            </li>
+                        </ul>
+                        <div class="text-end-lg">
+                            <button type="button" class="btn btn-outline-primary me-3">Login</button>
+                            <button type="button" class="btn btn-primary">Sign-up</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main class="bg-lightgreen">
-        <div class="spacer spacer-none-md spacer-none-lg"></div>
-        <section class="container">
+        <section class="container-fluid bg-leafygreen overflow-hidden">
+            <div class="row mt-5">
+                <div class="col-12 text-center lightgreen p-3">
+                    <div class="pt-4">
+                        <h1>We aren't bad at cooking.</h1>
+                        <h1>We need a hand planning recipes like pro chefs.</h1>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="ratio ratio-21x9">
-                        <video autoplay muted loop>
+                        <video autoplay muted>
                             <source src="media/mescolanzaHero1.mp4" type="video/mp4">
                         </video>
                         <div class="row">
-                            <div class="mt-2">
+                            <div class="mt-2 animateRtoL animateRtoL-md animateRtoL-lg">
                                 <h2 class="heroContent heroContent-md heroContent-lg">
                                     We buy groceries with a <span class="highlightText1">plan</span>,
                                     but at the end of the week
-                                    there is <span>always</span> something left <span>unused</span> in the fridge.
+                                    there is <span class="highlightText1">always unused</span> food sitting in the
+                                    fridge.
                                 </h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="spacer spacer-none-md spacer-none-lg"></div>
+            <div class="spacer spacer-md spacer-lg"></div>
         </section>
-        <div class="spacer spacer-none-md spacer-none-lg"></div>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-12 text-center bg-teal lightgreen p-4">
-                    <h1>We aren't bad at cooking.</h1>
-                    <h1>We need a hand planning recipes like pro chefs.</h1>
-                </div>
-            </div>
-        </section>
-        <div class="spacer spacer-md spacer-lg"></div>
         <section class="container">
             <div class="row">
-                <div class="col-4 text-end py-5">
+                <div class="col-12 text-center pt-5">
                     <h2>We've tried</h2>
                 </div>
-                <div class="col-8 text-start py-5 innerScrollArea">
-                    <div class="">
+                <div class="col-12 text-center innerScrollArea">
+                    <div class="snap pb-5">
                         <h2>meal kits,</h2>
                         <img class="img-fluid" src="" alt="...">
                     </div>
-                    <div class="">
+                    <div class="snap pb-5">
                         <h2>grocery delivery apps,</h2>
                         <img class="img-fluid" src="" alt="...">
                     </div>
-                    <div class="">
+                    <div class="snap pb-5">
                         <h2>& everything in between</h2>
                         <img class="img-fluid" src="" alt="...">
                     </div>
@@ -102,16 +111,16 @@
         <div class="spacer spacer-md spacer-lg"></div>
         <section class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center bg-teal lightgreen p-3">
-                    <h2>Nothing was sustainable.</h2>
-                    <h2>Fed up with this experience we created ... </h2>
+                <div class="col-12 text-center bg-sunshineyellow leafygreen p-3">
+                    <h2>Nothing was sustainable</h2>
+                    <h2>unsatisfied we created</h2>
                 </div>
             </div>
         </section>
         <div class="spacer spacer-md spacer-lg"></div>
         <section class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-5 pb-4">
+                <div class="col-12 col-md-6 col-lg-5">
                     <img src="media/mescolanzaLogo.png" class="img-fluid" alt="mescolanza logo opt 1">
                     <p>
                         whose purpose is to save you time, energy and money.
@@ -119,7 +128,7 @@
                         ducimus, qui, nobis aspernatur dolor
                         illo incidunt reprehenderit dicta repellendus exercitationem in?
                     </p>
-                    <a class="btn btn-outline-primary" href="#" role="button">Learn more</a>
+                    <a class="btn btn-outline-primary" href="about.html" role="button">Learn more</a>
                 </div>
                 <div class="col-12 col-md-6 col-lg-7">
                     <img class="img-fluid" src="media/Mescolanza2Store.jpeg" alt="...">
@@ -129,7 +138,7 @@
         <div class="spacer spacer-md spacer-lg"></div>
         <section class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center bg-teal lightgreen p-4">
+                <div class="col-12 text-center bg-leafygreen lightgreen p-4">
                     <h1>When you shop with us</h1>
                 </div>
             </div>
@@ -137,62 +146,68 @@
         <div class="spacer spacer-md spacer-lg"></div>
         <section class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-md-6 col-lg-5 p-4-md">
                     <h4>We provide you with grocery lists and recipes each week</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat suscipit tempora vel cumque ipsa
                         quaerat. Eligendi eveniet soluta, fugit non sit illum consectetur illo obcaecati explicabo esse
                         ab consequuntur porro.</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-7 py-3">
-                    <img class="img-fluid" src="" alt="...">
+                <div class="col-12 col-md-6 col-lg-7 pb-5 py-3-md">
+                    <img class="img-fluid" src="media/recipecards.jpeg" alt="...">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-5 order-md-2">
+                <div class="col-12 col-md-6 col-lg-5 order-md-2 p-4-md">
                     <h4>We give you the option to customize recipes based on your dietary needs</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat suscipit tempora vel cumque ipsa
                         quaerat. Eligendi eveniet soluta, fugit non sit illum consectetur illo obcaecati explicabo esse
                         ab consequuntur porro.</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-7 py-3 order-md-1">
-                    <img class="img-fluid" src="" alt="...">
+                <div class="col-12 col-md-6 col-lg-7 pb-5 py-3-md order-md-1">
+                    <img class="img-fluid" src="media/swapingredients.jpg" alt="...">
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 mb-3 text-center">
                     <h4>We offer 3 different types of shopping experiences.</h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card shadow mb-4">
+                        <img src="media/GroceryShopping.png" class="card-img-top" alt="...">
                         <div class="card-body text-center text-md-start">
-                            <h5 class="card-title">Shop in store</h5>
+                            <h5 class="card-title">Shop for groceries</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
+                        </div>
+                        <div class="text-center mb-2">
                             <a href="#" class="btn btn-primary">learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card shadow mb-4">
+                        <img src="media/GroceryPickup.png" class="card-img-top" alt="...">
                         <div class="card-body text-center text-md-start">
-                            <h5 class="card-title">Pick up in store</h5>
+                            <h5 class="card-title">Pick up groceries in store</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
+                        </div>
+                        <div class="text-center mb-2">
                             <a href="#" class="btn btn-primary">learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card shadow mb-4">
+                        <img src="media/GroceryDelivery.png" class="card-img-top" alt="...">
                         <div class="card-body text-center text-md-start">
                             <h5 class="card-title">Have groceries delivered</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
+                        </div>
+                        <div class="text-center mb-2">
                             <a href="#" class="btn btn-primary">learn more</a>
                         </div>
                     </div>
@@ -207,7 +222,7 @@
                 <div class="col-12 col-md-8">
                     <h2>Our mission at Mescolanza is to make grocery shopping easier, affordable and sustainable. Don't
                         believe us,</h2>
-                    <a class="btn btn-outline-primary" href="#" role="button">ask our loved ones</a>
+                    <a class="btn btn-outline-primary" href="team.html" role="button">ask our loved ones</a>
                 </div>
             </div>
         </section>
