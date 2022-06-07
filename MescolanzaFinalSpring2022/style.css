@@ -129,8 +129,8 @@ p{
 }
 
 .heroContent{
-    font-size: 1.6em;
-    line-height: 1.8rem;
+    font-size: 1.6em !important;
+    line-height: 1.8rem !important;
     padding: 1.1rem !important;
     color: var(--leafygreen) !important;
     background-color: hsla(162, 51%, 91%, 0.4) !important;
@@ -186,8 +186,8 @@ p{
         height: 8vh;
     }
     .heroContent-md{
-        font-size: 3.6em;
-        line-height: 3.8rem;
+        font-size: 3.6em !important;
+        line-height: 3.8rem !important;
         padding: 1.2rem !important;
         color: var(--leafygreen) !important;
         background: hsla(162, 51%, 91%, 0.4) !important;
@@ -216,8 +216,8 @@ p{
         height: 10vh;
     }
     .heroContent-lg{
-        font-size: 5.6em;
-        line-height: 6.2rem;
+        font-size: 5.6em !important;
+        line-height: 6.2rem !important;
         padding: 1.2rem !important;
         color: var(--leafygreen) !important;
         background: hsla(162, 51%, 91%, 0.4) !important;
