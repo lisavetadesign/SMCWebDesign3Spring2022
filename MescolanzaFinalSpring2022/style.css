@@ -87,7 +87,7 @@ p{
 }
 
 .innerScrollArea{
-    height: 100px !important;
+    height: 90px !important;
     overflow: scroll !important;
     scroll-behavior: auto;
     scroll-snap-type: y mandatory;
@@ -103,10 +103,24 @@ p{
     font-weight: 600;
     color: var(--lighttealgreen) !important;
 }
+.highlightText2{
+    font-family: 'Raleway', sans-serif !important;
+    font-style: italic !important;
+    font-weight: 600;
+    color: var(--sunshineyellow) !important;
+}
 .card{
     border: none;
     background-color: var(--lighttealgreen) !important;
     --bs-card-border-radius: 0rem !important;
+    justify-content: space-between !important;
+    height: 100% !important;
+}
+.w-500{
+    font-weight: 500 !important;
+}
+.w-600{
+    font-weight: 600 !important;
 }
 
 .logo{
@@ -115,8 +129,8 @@ p{
 }
 
 .heroContent{
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.6em;
+    line-height: 1.8rem;
     padding: 1.1rem !important;
     color: var(--leafygreen) !important;
     background-color: hsla(162, 51%, 91%, 0.4) !important;
@@ -124,21 +138,21 @@ p{
 
 .animateRtoL{
     position: absolute;
-    top: -30px;
+    top: -22px;
     z-index: 10;
     left: -100vw;
-    animation: RtoLsm 900ms  9500ms forwards;
+    animation: RtoLsm 800ms  7500ms forwards;
 }
 
 .nav-link{
-    font-family: raleway, sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
     font-weight: 800 !important;
-    font-style: normal !important;
+    font-style: bold !important;
     text-transform: uppercase;
     color: var(--teal)!important;
 }
 .nav-link:hover{
-    font-family: raleway, sans-serif !important;
+    font-family: 'Raleway', sans-serif !important;
     font-weight: 800 !important;
     font-style: italic !important;
     text-transform: uppercase;
@@ -153,6 +167,17 @@ p{
     --bs-navbar-color: rgba(269, 94%, 13%, 0.55) !important;
 }
 
+.accordion-button:not(.collapsed) {
+    color: var(--leafygreen) !important;
+    background-color: var(--lightgreen) !important;
+    font-size: 22px !important;
+}
+
+.accordion-body {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px !important;
+}
+
 @media (min-width: 768px){
     .spacer-none-md{
         height: 0vh;
@@ -161,23 +186,29 @@ p{
         height: 8vh;
     }
     .heroContent-md{
-        font-size: 32px;
-        line-height: 48px;
-        padding: 1rem !important;
+        font-size: 3.6em;
+        line-height: 3.8rem;
+        padding: 1.2rem !important;
         color: var(--leafygreen) !important;
         background: hsla(162, 51%, 91%, 0.4) !important;
     }
     .animateRtoL-md{
         position: absolute;
-        top: 12px;
+        top: -20px;
         z-index: 10;
         left: -100vw;
         overflow: hidden;
-        animation: RtoLmd 800ms  9500ms forwards;
+        animation: RtoLmd 800ms  7500ms forwards;
     }
 }
 
 @media (min-width: 992px){
+    p{
+        font-family: 'Raleway', sans-serif !important;
+        font-weight: 400 !important;
+        font-style: normal !important;
+        font-size: 18px !important;
+    }
     .spacer-none-lg{
         height: 0vh;
     }
@@ -185,8 +216,8 @@ p{
         height: 10vh;
     }
     .heroContent-lg{
-        font-size: 52px;
-        line-height: 72px;
+        font-size: 5.6em;
+        line-height: 6.2rem;
         padding: 1.2rem !important;
         color: var(--leafygreen) !important;
         background: hsla(162, 51%, 91%, 0.4) !important;
@@ -197,7 +228,7 @@ p{
         z-index: 10;
         left: -100vw;
         overflow: hidden;
-        animation: RtoLmd 800ms  9500ms forwards;
+        animation: RtoLlg 800ms  7500ms forwards;
     }
 }
 
@@ -218,6 +249,15 @@ p{
     }
 
     to {
-        left: 0vw;
+        left: 1.5vw;
+    }
+}
+@keyframes RtoLlg {
+    from {
+        left: -100vw;
+    }
+
+    to {
+        left: .9vw;
     }
 }
