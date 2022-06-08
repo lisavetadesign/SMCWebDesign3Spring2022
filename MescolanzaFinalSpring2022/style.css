@@ -22,6 +22,16 @@ p{
     font-style: normal !important;
 }
 
+ul{
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important; 
+}
+
+.list-none{
+    list-style: none;
+}
+
 .bg-leafygreen{
     background-color: var(--leafygreen) !important;
 }
@@ -95,7 +105,9 @@ p{
 .snap{
     scroll-snap-align: start;
 }
-
+.top{
+    top:18px;
+}
 
 .highlightText1{
     font-family: 'Raleway', sans-serif !important;
@@ -108,6 +120,12 @@ p{
     font-style: italic !important;
     font-weight: 600;
     color: var(--sunshineyellow) !important;
+}
+.logohighlight{
+    font-family: monarcha, serif;
+    font-weight: 500;
+    font-size: x-large;
+    font-style: normal;
 }
 .card{
     border: none;
@@ -126,6 +144,14 @@ p{
 .logo{
     width: 180px;
     height: auto; 
+}
+.mt-n1 {
+    margin-top: -.2rem !important;
+  }  
+
+.img-size{
+    max-height: 356px !important;
+    width: auto !important;
 }
 
 .heroContent{
@@ -199,6 +225,13 @@ p{
         overflow: hidden;
         animation: RtoLmd 800ms  7500ms forwards;
     }
+    .top-md{
+        top:30px;
+    }
+
+    .mt-n1-md {
+        margin-top: -1.2rem !important;
+      }  
 }
 
 @media (min-width: 992px){
@@ -229,6 +262,9 @@ p{
         overflow: hidden;
         animation: RtoLlg 800ms  7500ms forwards;
     }
+    .mt-n1-md {
+        margin-top: -2.8rem !important;
+      }
 }
 
 
